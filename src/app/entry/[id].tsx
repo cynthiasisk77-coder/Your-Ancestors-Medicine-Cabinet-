@@ -1,6 +1,7 @@
 import { Image } from 'expo-image';
 import { Stack, useLocalSearchParams } from 'expo-router';
-import { Pressable, ScrollView, Share, StyleSheet, Text, View, useColorScheme } from 'react-native';
+import { useState } from 'react';
+import { Modal, Pressable, ScrollView, Share, StyleSheet, Text, View, useColorScheme } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Colors, Fonts, Spacing, type ThemeColors } from '@/constants/theme';
@@ -13,6 +14,7 @@ export default function EntryDetailScreen() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
   const a = colors;
+  const [photoOpen, setPhotoOpen] = useState(false);
 
   const entry = entries.find((e) => e.id === id);
 
@@ -46,7 +48,23 @@ export default function EntryDetailScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['left', 'right', 'bottom']}>
       <Stack.Screen options={{ title: entry.name }} />
       <ScrollView contentContainerStyle={styles.scroll}>
-        {image ? <Image source={image} style={styles.image} contentFit="cover" /> : null}
+        {image ? (
+          <Pressable onPress={() => setPhotoOpen(true)}>
+            <Image source={image} style={styles.image} contentFit="cover" />
+            <View style={[styles.zoomHint, { backgroundColor: 'rgba(0,0,0,0.55)' }]}>
+              <Text style={styles.zoomHintText}>Tap to view full-screen</Text>
+            </View>
+          </Pressable>
+        ) : null}
+
+        <Modal visible={photoOpen} animationType="fade" transparent onRequestClose={() => setPhotoOpen(false)}>
+          <Pressable style={styles.photoModalBg} onPress={() => setPhotoOpen(false)}>
+            {image ? <Image source={image} style={styles.photoModalImage} contentFit="contain" /> : null}
+            <Pressable style={styles.photoModalClose} onPress={() => setPhotoOpen(false)}>
+              <Text style={styles.photoModalCloseText}>✕</Text>
+            </Pressable>
+          </Pressable>
+        </Modal>
 
         {!entry.confirmed && (
           <View style={[styles.badge, { borderColor: dangerous ? a.rust : a.ochre }]}>
@@ -105,6 +123,34 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   scroll: { padding: Spacing.three, paddingBottom: 48, gap: 4 },
   image: { width: '100%', aspectRatio: 4 / 3, borderRadius: 10, marginBottom: 8 },
+  zoomHint: {
+    position: 'absolute',
+    bottom: 16,
+    right: 8,
+    borderRadius: 20,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+  },
+  zoomHintText: { color: '#fff', fontSize: 11, fontWeight: '600' },
+  photoModalBg: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.95)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  photoModalImage: { width: '100%', height: '80%' },
+  photoModalClose: {
+    position: 'absolute',
+    top: 56,
+    right: 20,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255,255,255,0.15)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  photoModalCloseText: { color: '#fff', fontSize: 18, fontWeight: '700' },
   badge: {
     alignSelf: 'flex-start',
     borderWidth: 1,
