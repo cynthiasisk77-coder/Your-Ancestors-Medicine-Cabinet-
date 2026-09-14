@@ -7,7 +7,7 @@ import { plantImages } from '@/data/plant-images';
 import { Colors, Fonts, Spacing } from '@/constants/theme';
 import type { Entry } from '@/types';
 
-export function EntryCard({ entry }: { entry: Entry }) {
+export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
   const scheme = useColorScheme();
   const c = Colors[scheme === 'dark' ? 'dark' : 'light'];
   const image = entry.img ? plantImages[entry.img.value] : null;
@@ -18,7 +18,7 @@ export function EntryCard({ entry }: { entry: Entry }) {
       <Pressable
         style={[
           styles.card,
-          { backgroundColor: c.backgroundElement, borderColor: dangerous ? c.rust : entry.confirmed ? c.accent : c.ochre },
+          { width, backgroundColor: c.backgroundElement, borderColor: dangerous ? c.rust : entry.confirmed ? c.accent : c.ochre },
           !entry.confirmed && styles.cardUnconfirmed,
         ]}>
         {image ? <Image source={image} style={styles.image} contentFit="cover" /> : null}
@@ -48,7 +48,6 @@ export function EntryCard({ entry }: { entry: Entry }) {
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
     borderWidth: 1,
     borderRadius: 8,
     padding: Spacing.three,

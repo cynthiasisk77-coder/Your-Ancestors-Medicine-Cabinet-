@@ -10,6 +10,7 @@ import {
   TextInput,
   View,
   useColorScheme,
+  useWindowDimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -19,10 +20,15 @@ import { entries } from '@/data/entries';
 import { communityLabels, communityOrder, regionLabels, regionOrder } from '@/data/labels';
 import type { Community, Region } from '@/types';
 
+const GRID_GAP = Spacing.two;
+const CARD_MARGIN = Spacing.two / 2;
+
 export default function BrowseScreen() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
   const params = useLocalSearchParams<{ region?: string; community?: string }>();
+  const { width: windowWidth } = useWindowDimensions();
+  const cardWidth = (windowWidth - GRID_GAP * 2 - CARD_MARGIN * 4) / 2;
 
   const [search, setSearch] = useState('');
   const [community, setCommunity] = useState<Community | 'all'>('all');
@@ -151,7 +157,7 @@ export default function BrowseScreen() {
         keyExtractor={(item) => item.id}
         numColumns={2}
         contentContainerStyle={styles.grid}
-        renderItem={({ item }) => <EntryCard entry={item} />}
+        renderItem={({ item }) => <EntryCard entry={item} width={cardWidth} />}
         ListEmptyComponent={
           <Text style={[styles.empty, { color: colors.textSecondary }]}>
             Nothing matches that search.
