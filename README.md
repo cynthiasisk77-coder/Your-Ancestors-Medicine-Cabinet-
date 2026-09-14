@@ -2,14 +2,15 @@
 
 A real, installable phone app (iOS + Android, built with Expo) preserving historical American folk and traditional medicine — Native nations, immigrant communities, and settler traditions, circa 1600s to the early 1900s.
 
-Everything works fully offline: all 856 entries and 290 plant photos are bundled into the app itself, so it needs zero internet connection once installed.
+Everything works fully offline: all 841 entries and 290 plant photos are bundled into the app itself, so it needs zero internet connection once installed.
 
 ## What's in the app
 
 - **547 confirmed entries** — who used a remedy, what it was for, how it was made, and the real story behind it
-- **309 unconfirmed research leads** — real, sourced plants and materials that came up in research but didn't have enough documented detail for a full write-up yet. 13 are flagged as genuinely dangerous with a red warning badge.
+- **294 unconfirmed research leads** — real, sourced plants and materials that came up in research but didn't have enough documented detail for a full write-up yet (hidden from Browse by default — there's a toggle to show them). 13 are flagged as genuinely dangerous with a red warning badge.
 - **Search** by name, ailment, or people
-- **Filter** by tradition and by region
+- **Filter** by tradition (a proper picker, not a cramped chip row) and by region
+- **Traditions tab** — browse by community, with counts
 - **Regions tab** — browse by where a remedy comes from
 - **Share button** on every entry, to send one remedy to someone else
 
@@ -31,8 +32,9 @@ To eventually publish it to the App Store / Play Store, this project connects to
 - `src/app/` — the screens (file-based routing via `expo-router`)
   - `(tabs)/index.tsx` — Browse screen (search, filters, grid)
   - `(tabs)/explore.tsx` — Regions screen
+  - `(tabs)/traditions.tsx` — Traditions (community) screen
   - `entry/[id].tsx` — one remedy's full detail page
-- `src/data/entries.json` — all 856 entries
+- `src/data/entries.json` — all 841 entries
 - `assets/plant-images/` — all 290 photos, bundled into the app
 - `src/components/EntryCard.tsx` — the card shown in the browse grid
 

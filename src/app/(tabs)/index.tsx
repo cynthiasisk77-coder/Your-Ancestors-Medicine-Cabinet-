@@ -2,6 +2,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
 import {
   FlatList,
+  Modal,
   Pressable,
   StyleSheet,
   Switch,
@@ -21,18 +22,25 @@ import type { Community, Region } from '@/types';
 export default function BrowseScreen() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
-  const params = useLocalSearchParams<{ region?: string }>();
+  const params = useLocalSearchParams<{ region?: string; community?: string }>();
 
   const [search, setSearch] = useState('');
   const [community, setCommunity] = useState<Community | 'all'>('all');
   const [region, setRegion] = useState<Region | 'all'>('all');
   const [showUnconfirmed, setShowUnconfirmed] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(false);
 
   useEffect(() => {
     if (params.region && regionOrder.includes(params.region as Region)) {
       setRegion(params.region as Region);
     }
   }, [params.region]);
+
+  useEffect(() => {
+    if (params.community && communityOrder.includes(params.community as Community)) {
+      setCommunity(params.community as Community);
+    }
+  }, [params.community]);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -62,14 +70,53 @@ export default function BrowseScreen() {
           {filtered.length} of {entries.length}
         </Text>
 
-        <ChipRow
-          label="Who"
-          active={community}
-          onChange={setCommunity}
-          items={communityOrder}
-          labels={communityLabels}
-          colors={colors}
-        />
+        <View style={styles.chipRow}>
+          <Text style={[styles.chipLabel, { color: colors.textSecondary }]}>Who</Text>
+          <Pressable
+            onPress={() => setPickerOpen(true)}
+            style={[styles.pickerButton, { borderColor: colors.accent, backgroundColor: colors.backgroundElement }]}>
+            <Text style={[styles.pickerButtonText, { color: colors.text }]}>
+              {community === 'all' ? 'All traditions' : communityLabels[community]}
+            </Text>
+            <Text style={[styles.pickerButtonChevron, { color: colors.accent }]}>▾</Text>
+          </Pressable>
+        </View>
+
+        <Modal visible={pickerOpen} animationType="slide" transparent onRequestClose={() => setPickerOpen(false)}>
+          <Pressable style={styles.modalScrim} onPress={() => setPickerOpen(false)}>
+            <Pressable style={[styles.modalSheet, { backgroundColor: colors.background }]} onPress={(e) => e.stopPropagation()}>
+              <Text style={[styles.modalTitle, { color: colors.text, fontFamily: Fonts?.serif }]}>
+                Filter by tradition
+              </Text>
+              <FlatList
+                data={['all' as const, ...communityOrder]}
+                keyExtractor={(v) => v}
+                renderItem={({ item }) => {
+                  const isActive = community === item;
+                  const label = item === 'all' ? 'All traditions' : communityLabels[item];
+                  return (
+                    <Pressable
+                      style={[styles.modalRow, { borderColor: colors.backgroundSelected }]}
+                      onPress={() => {
+                        setCommunity(item);
+                        setPickerOpen(false);
+                      }}>
+                      <Text
+                        style={[
+                          styles.modalRowText,
+                          { color: isActive ? colors.accent : colors.text, fontWeight: isActive ? '700' : '400' },
+                        ]}>
+                        {label}
+                      </Text>
+                      {isActive ? <Text style={{ color: colors.accent }}>✓</Text> : null}
+                    </Pressable>
+                  );
+                }}
+              />
+            </Pressable>
+          </Pressable>
+        </Modal>
+
         <ChipRow
           label="Where"
           active={region}
@@ -178,6 +225,29 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   chipText: { fontSize: 12.5 },
+  pickerButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+  },
+  pickerButtonText: { fontSize: 14.5, fontWeight: '600' },
+  pickerButtonChevron: { fontSize: 14, marginLeft: 8 },
+  modalScrim: { flex: 1, backgroundColor: 'rgba(0,0,0,0.4)', justifyContent: 'flex-end' },
+  modalSheet: { maxHeight: '75%', borderTopLeftRadius: 16, borderTopRightRadius: 16, paddingTop: Spacing.three },
+  modalTitle: { fontSize: 18, fontWeight: '700', paddingHorizontal: Spacing.three, marginBottom: 6 },
+  modalRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: Spacing.three,
+    paddingVertical: 14,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+  modalRowText: { fontSize: 15 },
   toggleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 2, marginBottom: 4 },
   toggleLabel: { fontSize: 12.5, flexShrink: 1 },
   grid: { paddingHorizontal: Spacing.two, paddingBottom: 32, paddingTop: 8 },

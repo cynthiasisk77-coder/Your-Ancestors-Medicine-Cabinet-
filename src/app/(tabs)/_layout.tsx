@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Image, useColorScheme } from 'react-native';
+import { Image, Text, useColorScheme } from 'react-native';
 
 import { Colors, Fonts } from '@/constants/theme';
 
@@ -44,6 +44,14 @@ export default function TabLayout() {
               resizeMode="contain"
             />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="traditions"
+        options={{
+          title: 'Traditions',
+          tabBarLabel: 'Traditions',
+          tabBarIcon: ({ size }) => <Text style={{ fontSize: size }}>🌿</Text>,
         }}
       />
     </Tabs>
