@@ -13,7 +13,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { EntryCard } from '@/components/EntryCard';
-import { Colors, Spacing, type ThemeColors } from '@/constants/theme';
+import { Colors, Fonts, Spacing, type ThemeColors } from '@/constants/theme';
 import { entries } from '@/data/entries';
 import { communityLabels, communityOrder, regionLabels, regionOrder } from '@/data/labels';
 import type { Community, Region } from '@/types';
@@ -26,7 +26,7 @@ export default function BrowseScreen() {
   const [search, setSearch] = useState('');
   const [community, setCommunity] = useState<Community | 'all'>('all');
   const [region, setRegion] = useState<Region | 'all'>('all');
-  const [showUnconfirmed, setShowUnconfirmed] = useState(true);
+  const [showUnconfirmed, setShowUnconfirmed] = useState(false);
 
   useEffect(() => {
     if (params.region && regionOrder.includes(params.region as Region)) {
@@ -80,9 +80,14 @@ export default function BrowseScreen() {
         />
 
         <Pressable style={styles.toggleRow} onPress={() => setShowUnconfirmed((v) => !v)}>
-          <Switch value={showUnconfirmed} onValueChange={setShowUnconfirmed} />
+          <Switch
+            value={showUnconfirmed}
+            onValueChange={setShowUnconfirmed}
+            trackColor={{ true: colors.accent }}
+          />
           <Text style={[styles.toggleLabel, { color: colors.textSecondary }]}>
-            Include unconfirmed research leads
+            Also show unresearched leads ({entries.filter((e) => !e.confirmed).length} not yet
+            written up)
           </Text>
         </Pressable>
       </View>
@@ -141,9 +146,9 @@ function ChipRow<T extends string>({
               style={[
                 styles.chip,
                 { borderColor: colors.backgroundSelected },
-                isActive && { backgroundColor: colors.text, borderColor: colors.text },
+                isActive && { backgroundColor: colors.accent, borderColor: colors.accent },
               ]}>
-              <Text style={[styles.chipText, { color: isActive ? colors.background : colors.text }]}>
+              <Text style={[styles.chipText, { color: isActive ? colors.accentText : colors.text }]}>
                 {text}
               </Text>
             </Pressable>

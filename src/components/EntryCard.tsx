@@ -4,17 +4,12 @@ import { Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native'
 
 import { communityLabels, regionLabels } from '@/data/labels';
 import { plantImages } from '@/data/plant-images';
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, Fonts, Spacing } from '@/constants/theme';
 import type { Entry } from '@/types';
-
-const palette = {
-  light: { card: '#F6F2E6', border: 'rgba(38,42,30,0.18)', ink: '#262A1E', muted: '#5b5942', forest: '#3E5C3B', ochre: '#8C6A24', rust: '#8B3A2B' },
-  dark: { card: '#262E1F', border: 'rgba(237,232,216,0.20)', ink: '#EDE8D8', muted: '#B9B39A', forest: '#93B884', ochre: '#D9AD5E', rust: '#E08469' },
-};
 
 export function EntryCard({ entry }: { entry: Entry }) {
   const scheme = useColorScheme();
-  const p = palette[scheme === 'dark' ? 'dark' : 'light'];
+  const c = Colors[scheme === 'dark' ? 'dark' : 'light'];
   const image = entry.img ? plantImages[entry.img.value] : null;
   const dangerous = !entry.confirmed && !!entry.caution;
 
@@ -23,27 +18,27 @@ export function EntryCard({ entry }: { entry: Entry }) {
       <Pressable
         style={[
           styles.card,
-          { backgroundColor: p.card, borderColor: dangerous ? p.rust : entry.confirmed ? p.border : p.ochre },
+          { backgroundColor: c.backgroundElement, borderColor: dangerous ? c.rust : entry.confirmed ? c.accent : c.ochre },
           !entry.confirmed && styles.cardUnconfirmed,
         ]}>
         {image ? <Image source={image} style={styles.image} contentFit="cover" /> : null}
         {!entry.confirmed && (
-          <View style={[styles.badge, { borderColor: dangerous ? p.rust : p.ochre }]}>
-            <Text style={[styles.badgeText, { color: dangerous ? p.rust : p.ochre }]}>
+          <View style={[styles.badge, { borderColor: dangerous ? c.rust : c.ochre }]}>
+            <Text style={[styles.badgeText, { color: dangerous ? c.rust : c.ochre }]}>
               {dangerous ? 'UNCONFIRMED · DO NOT USE' : 'UNCONFIRMED · LEAD'}
             </Text>
           </View>
         )}
         <View style={styles.tags}>
-          <Text style={[styles.tag, { color: '#33427A' }]} numberOfLines={1}>
+          <Text style={[styles.tag, { color: c.indigo }]} numberOfLines={1}>
             {communityLabels[entry.community]}
           </Text>
-          <Text style={[styles.tagSep, { color: p.muted }]}>·</Text>
-          <Text style={[styles.tag, { color: p.ochre }]}>{regionLabels[entry.region]}</Text>
+          <Text style={[styles.tagSep, { color: c.textSecondary }]}>·</Text>
+          <Text style={[styles.tag, { color: c.ochre }]}>{regionLabels[entry.region]}</Text>
         </View>
-        <Text style={[styles.name, { color: p.ink }]}>{entry.name}</Text>
-        {entry.sci ? <Text style={[styles.sci, { color: p.muted }]}>{entry.sci}</Text> : null}
-        <Text style={[styles.use, { color: p.ink }]} numberOfLines={2}>
+        <Text style={[styles.name, { color: c.text, fontFamily: Fonts?.serif }]}>{entry.name}</Text>
+        {entry.sci ? <Text style={[styles.sci, { color: c.textSecondary }]}>{entry.sci}</Text> : null}
+        <Text style={[styles.use, { color: c.text }]} numberOfLines={2}>
           {entry.use}
         </Text>
       </Pressable>

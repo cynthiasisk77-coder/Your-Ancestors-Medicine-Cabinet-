@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import { Image, useColorScheme } from 'react-native';
 
-import { Colors } from '@/constants/theme';
+import { Colors, Fonts } from '@/constants/theme';
 
 export default function TabLayout() {
   const scheme = useColorScheme();
@@ -12,8 +12,9 @@ export default function TabLayout() {
       screenOptions={{
         headerStyle: { backgroundColor: colors.background },
         headerTintColor: colors.text,
+        headerTitleStyle: { fontFamily: Fonts?.serif },
         headerShadowVisible: false,
-        tabBarActiveTintColor: colors.text,
+        tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.textSecondary,
         tabBarStyle: { backgroundColor: colors.background },
       }}>

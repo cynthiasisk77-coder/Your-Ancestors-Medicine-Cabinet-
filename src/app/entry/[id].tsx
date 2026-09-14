@@ -3,21 +3,16 @@ import { Stack, useLocalSearchParams } from 'expo-router';
 import { Pressable, ScrollView, Share, StyleSheet, Text, View, useColorScheme } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Colors, Spacing, type ThemeColors } from '@/constants/theme';
+import { Colors, Fonts, Spacing, type ThemeColors } from '@/constants/theme';
 import { entries } from '@/data/entries';
 import { communityLabels, regionLabels } from '@/data/labels';
 import { plantImages } from '@/data/plant-images';
-
-const accent = {
-  light: { forest: '#3E5C3B', ochre: '#8C6A24', rust: '#8B3A2B', indigo: '#33427A' },
-  dark: { forest: '#93B884', ochre: '#D9AD5E', rust: '#E08469', indigo: '#9AA8E8' },
-};
 
 export default function EntryDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
-  const a = accent[scheme === 'dark' ? 'dark' : 'light'];
+  const a = colors;
 
   const entry = entries.find((e) => e.id === id);
 
@@ -67,7 +62,7 @@ export default function EntryDetailScreen() {
           <Text style={[styles.tag, { color: a.ochre }]}>{regionLabels[entry.region]}</Text>
         </View>
 
-        <Text style={[styles.name, { color: colors.text }]}>{entry.name}</Text>
+        <Text style={[styles.name, { color: colors.text, fontFamily: Fonts?.serif }]}>{entry.name}</Text>
         {entry.sci ? <Text style={[styles.sci, { color: colors.textSecondary }]}>{entry.sci}</Text> : null}
 
         <Field label="Tradition" value={entry.people} colors={colors} />
@@ -87,8 +82,8 @@ export default function EntryDetailScreen() {
 
         <Pressable
           onPress={onShare}
-          style={[styles.shareButton, { backgroundColor: colors.text }]}>
-          <Text style={[styles.shareButtonText, { color: colors.background }]}>Share this remedy</Text>
+          style={[styles.shareButton, { backgroundColor: colors.accent }]}>
+          <Text style={[styles.shareButtonText, { color: colors.accentText }]}>Share this remedy</Text>
         </Pressable>
       </ScrollView>
     </SafeAreaView>

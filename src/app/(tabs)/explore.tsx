@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View, useColorScheme } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, Fonts, Spacing } from '@/constants/theme';
 import { entries } from '@/data/entries';
 import { regionGridPosition, regionLabels, regionOrder } from '@/data/labels';
 import type { Region } from '@/types';
@@ -50,11 +50,11 @@ export default function RegionsScreen() {
                     height: `${(1 / ROWS) * 100}%`,
                   },
                 ]}>
-                <View style={[styles.tileInner, { backgroundColor: colors.backgroundElement }]}>
+                <View style={[styles.tileInner, { backgroundColor: colors.backgroundElement, borderColor: colors.accent }]}>
                   <Text style={[styles.tileLabel, { color: colors.text }]} numberOfLines={2}>
                     {regionLabels[region]}
                   </Text>
-                  <Text style={[styles.tileCount, { color: colors.textSecondary }]}>
+                  <Text style={[styles.tileCount, { color: colors.accent }]}>
                     {counts[region] ?? 0}
                   </Text>
                 </View>
@@ -63,7 +63,9 @@ export default function RegionsScreen() {
           })}
         </View>
 
-        <Text style={[styles.sectionTitle, { color: colors.text }]}>All regions</Text>
+        <Text style={[styles.sectionTitle, { color: colors.text, fontFamily: Fonts?.serif }]}>
+          All regions
+        </Text>
         {regionOrder.map((region) => (
           <Pressable
             key={region}
@@ -89,6 +91,7 @@ const styles = StyleSheet.create({
   tileInner: {
     flex: 1,
     borderRadius: 8,
+    borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 4,
