@@ -1,56 +1,41 @@
-# Welcome to your Expo app 👋
+# Roots & Remedies
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A real, installable phone app (iOS + Android, built with Expo) preserving historical American folk and traditional medicine — Native nations, immigrant communities, and settler traditions, circa 1600s to the early 1900s.
 
-## Get started
+Everything works fully offline: all 763 entries and 290 plant photos are bundled into the app itself, so it needs zero internet connection once installed.
 
-1. Install dependencies
+## What's in the app
 
-   ```bash
-   npm install
-   ```
+- **547 confirmed entries** — who used a remedy, what it was for, how it was made, and the real story behind it
+- **216 unconfirmed research leads** — real, sourced plants that came up in research but didn't have enough documented detail for a full write-up. 13 are flagged as genuinely dangerous with a red warning badge.
+- **Search** by name, ailment, or people
+- **Filter** by tradition and by region
+- **Regions tab** — browse by where a remedy comes from
+- **Share button** on every entry, to send one remedy to someone else
 
-2. Start the app
+## Trying it out
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+This is a normal [Expo](https://expo.dev) app. To run it:
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+That prints a QR code — scan it with the **Expo Go** app on your phone (free, App Store / Play Store) to open this app live on your own device. No account or build step needed for that.
 
-### Other setup steps
+To eventually publish it to the App Store / Play Store, this project connects to [expo.dev](https://expo.dev) via **EAS** (Expo Application Services) — that's a separate step for later, once the app itself is finished.
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## Project layout
 
-## Learn more
+- `src/app/` — the screens (file-based routing via `expo-router`)
+  - `(tabs)/index.tsx` — Browse screen (search, filters, grid)
+  - `(tabs)/explore.tsx` — Regions screen
+  - `entry/[id].tsx` — one remedy's full detail page
+- `src/data/entries.json` — all 763 entries
+- `assets/plant-images/` — all 290 photos, bundled into the app
+- `src/components/EntryCard.tsx` — the card shown in the browse grid
 
-To learn more about developing your project with Expo, look at the following resources:
+## Status
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This is the real app, replacing the earlier web preview. It's been verified to type-check cleanly and to build successfully for iOS, Android, and web. It hasn't yet been tested live on a device — that's the next step.
