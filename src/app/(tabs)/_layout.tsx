@@ -31,7 +31,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Roots & Remedies',
+          title: 'The Forgotten Remedy Cabinet',
           tabBarLabel: 'Browse',
           tabBarIcon: ({ size }) => (
             <Image

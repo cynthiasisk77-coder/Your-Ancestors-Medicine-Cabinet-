@@ -65,12 +65,14 @@ export default function BrowseScreen() {
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['left', 'right']}>
       <View style={styles.controls}>
-        <Text style={[styles.welcome, { color: colors.text, fontFamily: Fonts?.serif }]}>
-          Welcome home.
-        </Text>
-        <Text style={[styles.welcomeSub, { color: colors.textSecondary }]}>
-          Search for a remedy you have in mind, or just start browsing below.
-        </Text>
+        <View style={styles.welcomeRow}>
+          <Text style={[styles.welcome, { color: colors.text, fontFamily: Fonts?.serif }]}>
+            Welcome home.
+          </Text>
+          <Text style={[styles.welcomeSub, { color: colors.textSecondary }]} numberOfLines={1}>
+            Search for a remedy, or browse below.
+          </Text>
+        </View>
         <TextInput
           value={search}
           onChangeText={setSearch}
@@ -220,24 +222,25 @@ function ChipRow<T extends string>({
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  controls: { paddingHorizontal: Spacing.three, paddingTop: Spacing.two, gap: 8 },
-  welcome: { fontSize: 24, fontWeight: '700', marginBottom: -2 },
-  welcomeSub: { fontSize: 13, lineHeight: 18, marginBottom: 4 },
+  controls: { paddingHorizontal: Spacing.three, paddingTop: 4, gap: 5 },
+  welcomeRow: { flexDirection: 'row', alignItems: 'baseline', gap: 6, flexWrap: 'wrap' },
+  welcome: { fontSize: 17, fontWeight: '700' },
+  welcomeSub: { fontSize: 11.5, flexShrink: 1 },
   search: {
     borderRadius: 10,
     borderWidth: 1,
     paddingHorizontal: 14,
-    paddingVertical: 10,
-    fontSize: 15,
+    paddingVertical: 8,
+    fontSize: 14.5,
   },
-  count: { fontSize: 11, alignSelf: 'flex-end' },
-  chipRow: { gap: 4 },
+  count: { fontSize: 10.5, alignSelf: 'flex-end' },
+  chipRow: { gap: 3 },
   chipLabel: { fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 },
   chip: {
     borderWidth: 1,
     borderRadius: 20,
     paddingHorizontal: 12,
-    paddingVertical: 6,
+    paddingVertical: 5,
   },
   chipText: { fontSize: 12.5 },
   pickerButton: {
@@ -247,7 +250,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 14,
-    paddingVertical: 10,
+    paddingVertical: 7,
   },
   pickerButtonText: { fontSize: 14.5, fontWeight: '600' },
   pickerButtonChevron: { fontSize: 14, marginLeft: 8 },
@@ -263,8 +266,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   modalRowText: { fontSize: 15 },
-  toggleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 2, marginBottom: 4 },
-  toggleLabel: { fontSize: 12.5, flexShrink: 1 },
-  grid: { paddingHorizontal: Spacing.two, paddingBottom: 32, paddingTop: 8 },
+  toggleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 0, marginBottom: 0 },
+  toggleLabel: { fontSize: 12, flexShrink: 1 },
+  grid: { paddingHorizontal: Spacing.two, paddingBottom: 32, paddingTop: 4 },
   empty: { textAlign: 'center', marginTop: 48, fontStyle: 'italic' },
 });

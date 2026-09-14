@@ -39,7 +39,7 @@ export default function EntryDetailScreen() {
       entry.note ? `\n${entry.note}` : null,
       entry.caution ? `\nCAUTION: ${entry.caution}` : null,
       '',
-      'From Roots & Remedies — a historical archive of American folk medicine.',
+      'From The Forgotten Remedy Cabinet — a historical archive of American folk medicine.',
     ].filter(Boolean);
     Share.share({ message: lines.join('\n') });
   };

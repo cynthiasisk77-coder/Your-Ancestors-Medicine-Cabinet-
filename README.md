@@ -1,4 +1,4 @@
-# Roots & Remedies
+# The Forgotten Remedy Cabinet
 
 A real, installable phone app (iOS + Android, built with Expo) preserving historical American folk and traditional medicine — Native nations, immigrant communities, and settler traditions, circa 1600s to the early 1900s.
 
