@@ -8,9 +8,11 @@
     "scheme": "rootsandremediesapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.cynthiasisk.rootsandremedies"
     },
     "android": {
+      "package": "com.cynthiasisk.rootsandremedies",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -37,6 +39,11 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "34ddfcb0-ebcf-4f65-8820-1b0a9e60f5a8"
+      }
     }
   }
 }
