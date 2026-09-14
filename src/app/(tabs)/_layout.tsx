@@ -1,11 +1,21 @@
-import { Tabs } from 'expo-router';
-import { Image, Text, useColorScheme } from 'react-native';
+import { Tabs, useRouter } from 'expo-router';
+import { Image, Pressable, Text, useColorScheme } from 'react-native';
 
 import { Colors, Fonts } from '@/constants/theme';
 
 export default function TabLayout() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
+  const router = useRouter();
+
+  const SearchHeaderButton = () => (
+    <Pressable
+      onPress={() => router.push('/(tabs)')}
+      hitSlop={12}
+      style={{ paddingHorizontal: 14 }}>
+      <Text style={{ fontSize: 20 }}>🔍</Text>
+    </Pressable>
+  );
 
   return (
     <Tabs
@@ -37,6 +47,7 @@ export default function TabLayout() {
         options={{
           title: 'Regions',
           tabBarLabel: 'Regions',
+          headerRight: SearchHeaderButton,
           tabBarIcon: ({ size }) => (
             <Image
               source={require('@/assets/images/tabIcons/explore.png')}
@@ -51,6 +62,7 @@ export default function TabLayout() {
         options={{
           title: 'Traditions',
           tabBarLabel: 'Traditions',
+          headerRight: SearchHeaderButton,
           tabBarIcon: ({ size }) => <Text style={{ fontSize: size }}>🌿</Text>,
         }}
       />

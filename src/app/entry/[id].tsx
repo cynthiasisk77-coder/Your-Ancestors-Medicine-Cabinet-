@@ -65,14 +65,16 @@ export default function EntryDetailScreen() {
         <Text style={[styles.name, { color: colors.text, fontFamily: Fonts?.serif }]}>{entry.name}</Text>
         {entry.sci ? <Text style={[styles.sci, { color: colors.textSecondary }]}>{entry.sci}</Text> : null}
 
+        {entry.note ? (
+          <View style={[styles.storyCard, { backgroundColor: colors.backgroundElement, borderColor: colors.accent }]}>
+            <Text style={[styles.storyGlyph, { color: colors.accent }]}>❦</Text>
+            <Text style={[styles.story, { color: colors.text, fontFamily: Fonts?.serif }]}>{entry.note}</Text>
+          </View>
+        ) : null}
+
         <Field label="Tradition" value={entry.people} colors={colors} />
         <Field label="Used for" value={entry.use} colors={colors} />
         {entry.method ? <Field label="How it was made" value={entry.method} colors={colors} /> : null}
-        {entry.note ? (
-          <View style={[styles.noteBox, { borderColor: colors.backgroundSelected }]}>
-            <Text style={[styles.note, { color: colors.textSecondary }]}>{entry.note}</Text>
-          </View>
-        ) : null}
         {entry.caution ? (
           <View style={[styles.cautionBox, { borderColor: a.rust }]}>
             <Text style={[styles.cautionLabel, { color: a.rust }]}>CAUTION</Text>
@@ -119,8 +121,15 @@ const styles = StyleSheet.create({
   field: { marginTop: 14 },
   fieldLabel: { fontSize: 11, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 3 },
   fieldValue: { fontSize: 15, lineHeight: 21 },
-  noteBox: { borderLeftWidth: 2, paddingLeft: 10, marginTop: 16 },
-  note: { fontSize: 13.5, fontStyle: 'italic', lineHeight: 19 },
+  storyCard: {
+    borderWidth: 1,
+    borderRadius: 14,
+    padding: 16,
+    marginTop: 14,
+    marginBottom: 4,
+  },
+  storyGlyph: { fontSize: 20, marginBottom: 4 },
+  story: { fontSize: 16, lineHeight: 24 },
   cautionBox: { borderWidth: 1, borderRadius: 8, padding: 12, marginTop: 16 },
   cautionLabel: { fontSize: 11, fontWeight: '700', letterSpacing: 1, marginBottom: 4 },
   caution: { fontSize: 13.5, lineHeight: 19 },
