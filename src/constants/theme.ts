@@ -20,6 +20,7 @@ export const Colors = {
     rust: '#8B3A2B',
     indigo: '#33427A',
     border: 'rgba(38,42,30,0.18)',
+    headerBackground: '#DCE8D2',
   },
   dark: {
     text: '#EDE8D8',
@@ -33,6 +34,7 @@ export const Colors = {
     rust: '#E08469',
     indigo: '#9AA8E8',
     border: 'rgba(237,232,216,0.20)',
+    headerBackground: '#1E2B18',
   },
 } as const;
 

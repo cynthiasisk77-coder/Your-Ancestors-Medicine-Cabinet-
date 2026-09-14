@@ -20,7 +20,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerStyle: { backgroundColor: colors.background },
+        headerStyle: { backgroundColor: colors.headerBackground },
         headerTintColor: colors.text,
         headerTitleStyle: { fontFamily: Fonts?.serif },
         headerShadowVisible: false,
