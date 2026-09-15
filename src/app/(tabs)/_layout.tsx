@@ -74,9 +74,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Regions',
-          tabBarLabel: 'Regions',
-          headerTitle: () => <HeaderTitle label="Regions" />,
+          title: 'States',
+          tabBarLabel: 'States',
+          headerTitle: () => <HeaderTitle label="States" />,
           headerRight: SearchHeaderButton,
           tabBarIcon: ({ size }) => (
             <Image

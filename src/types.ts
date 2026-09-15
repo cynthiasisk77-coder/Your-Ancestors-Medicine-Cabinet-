@@ -34,6 +34,11 @@ export type Region =
 
 export type EntryImage = { type: 'asset'; value: string };
 
+// 2-letter USPS state code (e.g. "TX"), or null when a single state can't be
+// honestly determined for this entry (the underlying tradition spans several
+// states, or nothing ties it to one place in particular).
+export type StateCode = string;
+
 export type Entry = {
   id: string;
   name: string;
@@ -41,6 +46,7 @@ export type Entry = {
   people: string;
   community: Community;
   region: Region;
+  state: StateCode | null;
   use: string;
   method: string | null;
   note: string | null;

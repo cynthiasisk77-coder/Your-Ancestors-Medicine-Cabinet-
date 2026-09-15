@@ -17,7 +17,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { EntryCard } from '@/components/EntryCard';
 import { Colors, Fonts, Spacing, type ThemeColors } from '@/constants/theme';
 import { entries } from '@/data/entries';
-import { communityLabels, communityOrder, regionLabels, regionOrder } from '@/data/labels';
+import { communityLabels, communityOrder, regionLabels, regionOrder, stateLabels } from '@/data/labels';
 import type { Community, Region } from '@/types';
 
 const GRID_GAP = Spacing.two;
@@ -26,13 +26,14 @@ const CARD_MARGIN = Spacing.two / 2;
 export default function BrowseScreen() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
-  const params = useLocalSearchParams<{ region?: string; community?: string }>();
+  const params = useLocalSearchParams<{ region?: string; community?: string; state?: string }>();
   const { width: windowWidth } = useWindowDimensions();
   const cardWidth = (windowWidth - GRID_GAP * 2 - CARD_MARGIN * 4) / 2;
 
   const [search, setSearch] = useState('');
   const [community, setCommunity] = useState<Community | 'all'>('all');
   const [region, setRegion] = useState<Region | 'all'>('all');
+  const [stateFilter, setStateFilter] = useState<string | 'all'>('all');
   const [showUnconfirmed, setShowUnconfirmed] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
 
@@ -48,11 +49,18 @@ export default function BrowseScreen() {
     }
   }, [params.community]);
 
+  useEffect(() => {
+    if (params.state && params.state in stateLabels) {
+      setStateFilter(params.state);
+    }
+  }, [params.state]);
+
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
     return entries.filter((e) => {
       if (community !== 'all' && e.community !== community) return false;
       if (region !== 'all' && e.region !== region) return false;
+      if (stateFilter !== 'all' && e.state !== stateFilter) return false;
       if (!showUnconfirmed && !e.confirmed) return false;
       if (q) {
         const hay = `${e.name} ${e.use} ${e.people} ${e.sci ?? ''}`.toLowerCase();
@@ -60,7 +68,7 @@ export default function BrowseScreen() {
       }
       return true;
     });
-  }, [search, community, region, showUnconfirmed]);
+  }, [search, community, region, stateFilter, showUnconfirmed]);
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['left', 'right']}>
@@ -77,6 +85,17 @@ export default function BrowseScreen() {
         <Text style={[styles.count, { color: colors.textSecondary }]}>
           {filtered.length} of {entries.length}
         </Text>
+
+        {stateFilter !== 'all' ? (
+          <Pressable
+            onPress={() => setStateFilter('all')}
+            style={[styles.stateBanner, { borderColor: colors.accent, backgroundColor: colors.backgroundElement }]}>
+            <Text style={[styles.stateBannerText, { color: colors.text }]}>
+              Showing {stateLabels[stateFilter] ?? stateFilter} only
+            </Text>
+            <Text style={[styles.stateBannerClear, { color: colors.accent }]}>✕ clear</Text>
+          </Pressable>
+        ) : null}
 
         <View style={styles.chipRow}>
           <Text style={[styles.chipLabel, { color: colors.textSecondary }]}>Tradition</Text>
@@ -227,6 +246,17 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   count: { fontSize: 10, alignSelf: 'flex-end' },
+  stateBanner: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+  },
+  stateBannerText: { fontSize: 12.5, fontWeight: '600' },
+  stateBannerClear: { fontSize: 12, fontWeight: '700' },
   chipRow: { gap: 3 },
   chipLabel: { fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 },
   chip: {

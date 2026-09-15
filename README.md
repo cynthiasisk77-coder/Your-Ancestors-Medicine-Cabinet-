@@ -12,7 +12,8 @@ Everything works fully offline: all 924 entries and 646 plant photos are bundled
 - **Search** by name, ailment, or people
 - **Filter** by tradition (a proper picker, not a cramped chip row) and by region
 - **Traditions tab** — browse by community, with counts
-- **Regions tab** — browse by where a remedy comes from
+- **States tab** — browse by which US state a remedy comes from, grouped by region
+- A quick region filter also sits right on the Browse screen, for fast broad narrowing without leaving the list
 - **Share button** on every entry, to send one remedy to someone else
 
 ## Trying it out
