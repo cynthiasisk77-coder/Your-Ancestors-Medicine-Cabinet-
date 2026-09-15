@@ -2,7 +2,7 @@
 
 A real, installable phone app (iOS + Android, built with Expo) preserving historical American folk and traditional medicine — Native nations, immigrant communities, and settler traditions, circa 1600s to the early 1900s.
 
-Everything works fully offline: all 942 entries and 653 plant photos are bundled into the app itself, so it needs zero internet connection once installed.
+Everything works fully offline: all 942 entries and 659 plant photos are bundled into the app itself, so it needs zero internet connection once installed.
 
 ## What's in the app
 
@@ -37,7 +37,7 @@ To eventually publish it to the App Store / Play Store, this project connects to
   - `(tabs)/traditions.tsx` — Traditions (community) screen
   - `entry/[id].tsx` — one remedy's full detail page
 - `src/data/entries.json` — all 942 entries
-- `assets/plant-images/` — all 653 photos, bundled into the app
+- `assets/plant-images/` — all 659 photos, bundled into the app
 - `src/components/EntryCard.tsx` — the card shown in the browse grid
 
 ## Status
