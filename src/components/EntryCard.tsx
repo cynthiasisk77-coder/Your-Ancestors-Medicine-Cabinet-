@@ -59,10 +59,15 @@ export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
 const styles = StyleSheet.create({
   card: {
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: 12,
     padding: Spacing.three,
     margin: Spacing.two / 2,
     gap: 6,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    elevation: 2,
   },
   cardUnconfirmed: {
     borderStyle: 'dashed',
@@ -70,7 +75,7 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     aspectRatio: 4 / 3,
-    borderRadius: 6,
+    borderRadius: 8,
     marginBottom: 4,
   },
   imagePlaceholder: { alignItems: 'center', justifyContent: 'center' },
