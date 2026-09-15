@@ -26,7 +26,7 @@ const CARD_MARGIN = Spacing.two / 2;
 export default function BrowseScreen() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
-  const params = useLocalSearchParams<{ region?: string; community?: string; state?: string }>();
+  const params = useLocalSearchParams<{ region?: string; community?: string; state?: string; reset?: string }>();
   const { width: windowWidth } = useWindowDimensions();
   const cardWidth = (windowWidth - GRID_GAP * 2 - CARD_MARGIN * 4) / 2;
 
@@ -54,6 +54,17 @@ export default function BrowseScreen() {
       setStateFilter(params.state);
     }
   }, [params.state]);
+
+  // The header search button sends a fresh `reset` value on every tap (even if
+  // already on this screen), so a filter picked up from the States or
+  // Traditions tab doesn't silently keep narrowing results afterward.
+  useEffect(() => {
+    if (params.reset) {
+      setCommunity('all');
+      setRegion('all');
+      setStateFilter('all');
+    }
+  }, [params.reset]);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();

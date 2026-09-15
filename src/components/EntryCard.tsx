@@ -16,11 +16,11 @@ export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
   return (
     <Link href={{ pathname: '/entry/[id]', params: { id: entry.id } }} asChild>
       <Pressable
-        style={[
+        style={StyleSheet.flatten([
           styles.card,
           { width, backgroundColor: c.backgroundElement, borderColor: dangerous ? c.rust : entry.confirmed ? c.accent : c.ochre },
           !entry.confirmed && styles.cardUnconfirmed,
-        ]}>
+        ])}>
         {image ? (
           <Image source={image} style={styles.image} contentFit="cover" />
         ) : (

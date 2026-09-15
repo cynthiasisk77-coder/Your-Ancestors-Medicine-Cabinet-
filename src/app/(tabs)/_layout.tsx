@@ -10,9 +10,9 @@ export default function TabLayout() {
 
   const SearchHeaderButton = () => (
     <Pressable
-      onPress={() => router.push('/(tabs)')}
+      onPress={() => router.push({ pathname: '/(tabs)', params: { reset: String(Date.now()) } })}
       hitSlop={12}
-      style={{ paddingHorizontal: 14 }}>
+      style={{ paddingHorizontal: 14, paddingTop: 6 }}>
       <Text style={{ fontSize: 20 }}>🔍</Text>
     </Pressable>
   );
