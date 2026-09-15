@@ -3,7 +3,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 
-import { Colors } from '@/constants/theme';
+import { Colors, Fonts } from '@/constants/theme';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -22,6 +22,8 @@ export default function RootLayout() {
         screenOptions={{
           headerStyle: { backgroundColor: colors.headerBackground },
           headerTintColor: colors.text,
+          headerTitleAlign: 'center',
+          headerTitleStyle: { fontFamily: Fonts?.serif, fontWeight: '700' },
           headerShadowVisible: false,
         }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />

@@ -70,7 +70,7 @@ export default function BrowseScreen() {
             Welcome home.
           </Text>
           <Text style={[styles.welcomeSub, { color: colors.textSecondary }]} numberOfLines={1}>
-            Search for a remedy, or browse below.
+            Search, or browse below.
           </Text>
         </View>
         <TextInput
@@ -85,7 +85,7 @@ export default function BrowseScreen() {
         </Text>
 
         <View style={styles.chipRow}>
-          <Text style={[styles.chipLabel, { color: colors.textSecondary }]}>Who</Text>
+          <Text style={[styles.chipLabel, { color: colors.textSecondary }]}>Tradition</Text>
           <Pressable
             onPress={() => setPickerOpen(true)}
             style={[styles.pickerButton, { borderColor: colors.accent, backgroundColor: colors.backgroundElement }]}>
@@ -132,7 +132,7 @@ export default function BrowseScreen() {
         </Modal>
 
         <ChipRow
-          label="Where"
+          label="Region"
           active={region}
           onChange={setRegion}
           items={regionOrder}
@@ -158,6 +158,7 @@ export default function BrowseScreen() {
         key="grid-2"
         keyExtractor={(item) => item.id}
         numColumns={2}
+        style={[styles.gridBody, { backgroundColor: colors.bodyBackground, borderTopColor: colors.accent }]}
         contentContainerStyle={styles.grid}
         renderItem={({ item }) => <EntryCard entry={item} width={cardWidth} />}
         ListEmptyComponent={
@@ -165,7 +166,6 @@ export default function BrowseScreen() {
             Nothing matches that search.
           </Text>
         }
-        removeClippedSubviews
         initialNumToRender={12}
         maxToRenderPerBatch={12}
         windowSize={7}
@@ -222,18 +222,18 @@ function ChipRow<T extends string>({
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  controls: { paddingHorizontal: Spacing.three, paddingTop: 4, gap: 5 },
+  controls: { paddingHorizontal: Spacing.three, paddingTop: 3, paddingBottom: 6, gap: 4 },
   welcomeRow: { flexDirection: 'row', alignItems: 'baseline', gap: 6, flexWrap: 'wrap' },
-  welcome: { fontSize: 17, fontWeight: '700' },
-  welcomeSub: { fontSize: 11.5, flexShrink: 1 },
+  welcome: { fontSize: 15.5, fontWeight: '700' },
+  welcomeSub: { fontSize: 11, flexShrink: 1 },
   search: {
     borderRadius: 10,
     borderWidth: 1,
     paddingHorizontal: 14,
-    paddingVertical: 8,
-    fontSize: 14.5,
+    paddingVertical: 7,
+    fontSize: 14,
   },
-  count: { fontSize: 10.5, alignSelf: 'flex-end' },
+  count: { fontSize: 10, alignSelf: 'flex-end' },
   chipRow: { gap: 3 },
   chipLabel: { fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 },
   chip: {
@@ -268,6 +268,7 @@ const styles = StyleSheet.create({
   modalRowText: { fontSize: 15 },
   toggleRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 0, marginBottom: 0 },
   toggleLabel: { fontSize: 12, flexShrink: 1 },
-  grid: { paddingHorizontal: Spacing.two, paddingBottom: 32, paddingTop: 4 },
+  gridBody: { flex: 1, borderTopWidth: 3 },
+  grid: { paddingHorizontal: Spacing.two, paddingBottom: 32, paddingTop: 10 },
   empty: { textAlign: 'center', marginTop: 48, fontStyle: 'italic' },
 });

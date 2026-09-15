@@ -56,14 +56,18 @@ export default function TraditionsScreen() {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['left', 'right']}>
-      <ScrollView contentContainerStyle={styles.scroll}>
+      <View style={styles.header}>
         <Text style={[styles.heading, { color: colors.text, fontFamily: Fonts?.serif }]}>
           Whose knowledge is this?
         </Text>
         <Text style={[styles.dek, { color: colors.textSecondary }]}>
           Tap a tradition to see what that community reached for, and why.
         </Text>
+      </View>
 
+      <ScrollView
+        style={[styles.body, { backgroundColor: colors.bodyBackground, borderTopColor: colors.accent }]}
+        contentContainerStyle={styles.scroll}>
         {groups.map((group) => (
           <View key={group.title} style={styles.group}>
             <Text style={[styles.groupTitle, { color: colors.accent, fontFamily: Fonts?.serif }]}>
@@ -95,9 +99,11 @@ export default function TraditionsScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
+  header: { padding: Spacing.three, paddingBottom: Spacing.two },
+  body: { flex: 1, borderTopWidth: 3 },
   scroll: { padding: Spacing.three, paddingBottom: 48 },
-  heading: { fontSize: 22, fontWeight: '700', marginBottom: 4 },
-  dek: { fontSize: 13, lineHeight: 18, marginBottom: Spacing.four },
+  heading: { fontSize: 20, fontWeight: '700', marginBottom: 4 },
+  dek: { fontSize: 13, lineHeight: 18 },
   group: { marginBottom: Spacing.four },
   groupTitle: { fontSize: 16, fontWeight: '700', marginBottom: 2 },
   groupBlurb: { fontSize: 12.5, lineHeight: 17, fontStyle: 'italic', marginBottom: 8 },
