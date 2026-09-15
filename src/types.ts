@@ -34,9 +34,10 @@ export type Region =
 
 export type EntryImage = { type: 'asset'; value: string };
 
-// 2-letter USPS state code (e.g. "TX"), or null when a single state can't be
-// honestly determined for this entry (the underlying tradition spans several
-// states, or nothing ties it to one place in particular).
+// 2-letter USPS state code (e.g. "TX"). An entry can genuinely belong to more
+// than one state (a tradition documented across several named states) - the
+// array holds every state actually named for this entry, or is empty when
+// none can be honestly pinned down.
 export type StateCode = string;
 
 export type Entry = {
@@ -46,7 +47,7 @@ export type Entry = {
   people: string;
   community: Community;
   region: Region;
-  state: StateCode | null;
+  state: StateCode[];
   use: string;
   method: string | null;
   note: string | null;

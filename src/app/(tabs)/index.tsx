@@ -71,7 +71,7 @@ export default function BrowseScreen() {
     return entries.filter((e) => {
       if (community !== 'all' && e.community !== community) return false;
       if (region !== 'all' && e.region !== region) return false;
-      if (stateFilter !== 'all' && e.state !== stateFilter) return false;
+      if (stateFilter !== 'all' && !e.state.includes(stateFilter)) return false;
       if (!showUnconfirmed && !e.confirmed) return false;
       if (q) {
         const hay = `${e.name} ${e.use} ${e.people} ${e.sci ?? ''}`.toLowerCase();

@@ -16,28 +16,41 @@ export default function StatesScreen() {
   const router = useRouter();
 
   const groups = useMemo(() => {
-    const byRegion: Record<Region, Record<string, number>> = {} as Record<Region, Record<string, number>>;
-    for (const region of regionOrder) byRegion[region] = {};
+    // An entry with 2+ states (a tradition documented across several named
+    // states) is counted once toward each of its states below, so a state
+    // row's total can add up to more than the region's own entry count -
+    // that's expected, the same way one photo can illustrate several entries.
+    const byRegion: Record<Region, { total: number; states: Record<string, number> }> = {} as Record<
+      Region,
+      { total: number; states: Record<string, number> }
+    >;
+    for (const region of regionOrder) byRegion[region] = { total: 0, states: {} };
 
     for (const e of entries) {
-      const key = e.state ?? '__unspecified';
-      byRegion[e.region][key] = (byRegion[e.region][key] ?? 0) + 1;
+      const bucket = byRegion[e.region];
+      bucket.total += 1;
+      if (e.state.length === 0) {
+        bucket.states.__unspecified = (bucket.states.__unspecified ?? 0) + 1;
+      } else {
+        for (const code of e.state) {
+          bucket.states[code] = (bucket.states[code] ?? 0) + 1;
+        }
+      }
     }
 
     return regionOrder
       .map((region) => {
-        const counts = byRegion[region];
-        const rows: StateRow[] = Object.entries(counts)
+        const { total, states } = byRegion[region];
+        const rows: StateRow[] = Object.entries(states)
           .filter(([code]) => code !== '__unspecified')
           .map(([code, count]) => ({ code, label: stateLabels[code] ?? code, count }))
           .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 
-        const unspecified = counts['__unspecified'] ?? 0;
+        const unspecified = states.__unspecified ?? 0;
         if (unspecified > 0) {
           rows.push({ code: null, label: 'Other / spans multiple states', count: unspecified });
         }
 
-        const total = Object.values(counts).reduce((sum, n) => sum + n, 0);
         return { region, total, rows };
       })
       .filter((g) => g.total > 0);
