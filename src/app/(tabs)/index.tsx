@@ -65,19 +65,13 @@ export default function BrowseScreen() {
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['left', 'right']}>
       <View style={styles.controls}>
-        <View style={styles.welcomeRow}>
-          <Text style={[styles.welcome, { color: colors.text, fontFamily: Fonts?.serif }]}>
-            Welcome home.
-          </Text>
-          <Text style={[styles.welcomeSub, { color: colors.textSecondary }]} numberOfLines={1}>
-            Search, or browse below.
-          </Text>
-        </View>
         <TextInput
           value={search}
           onChangeText={setSearch}
           placeholder="Search a remedy, ailment, or people…"
           placeholderTextColor={colors.textSecondary}
+          returnKeyType="search"
+          autoCorrect={false}
           style={[styles.search, { color: colors.text, backgroundColor: colors.backgroundElement, borderColor: colors.accent }]}
         />
         <Text style={[styles.count, { color: colors.textSecondary }]}>
@@ -161,6 +155,8 @@ export default function BrowseScreen() {
         style={[styles.gridBody, { backgroundColor: colors.bodyBackground, borderTopColor: colors.accent }]}
         contentContainerStyle={styles.grid}
         renderItem={({ item }) => <EntryCard entry={item} width={cardWidth} />}
+        keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
         ListEmptyComponent={
           <Text style={[styles.empty, { color: colors.textSecondary }]}>
             Nothing matches that search.
@@ -223,9 +219,6 @@ function ChipRow<T extends string>({
 const styles = StyleSheet.create({
   container: { flex: 1 },
   controls: { paddingHorizontal: Spacing.three, paddingTop: 3, paddingBottom: 6, gap: 4 },
-  welcomeRow: { flexDirection: 'row', alignItems: 'baseline', gap: 6, flexWrap: 'wrap' },
-  welcome: { fontSize: 15.5, fontWeight: '700' },
-  welcomeSub: { fontSize: 11, flexShrink: 1 },
   search: {
     borderRadius: 10,
     borderWidth: 1,

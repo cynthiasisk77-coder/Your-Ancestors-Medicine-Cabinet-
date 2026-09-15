@@ -21,7 +21,13 @@ export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
           { width, backgroundColor: c.backgroundElement, borderColor: dangerous ? c.rust : entry.confirmed ? c.accent : c.ochre },
           !entry.confirmed && styles.cardUnconfirmed,
         ]}>
-        {image ? <Image source={image} style={styles.image} contentFit="cover" /> : null}
+        {image ? (
+          <Image source={image} style={styles.image} contentFit="cover" />
+        ) : (
+          <View style={[styles.image, styles.imagePlaceholder, { backgroundColor: c.backgroundSelected }]}>
+            <Text style={styles.imagePlaceholderGlyph}>🌿</Text>
+          </View>
+        )}
         {!entry.confirmed && (
           <View style={[styles.badge, { borderColor: dangerous ? c.rust : c.ochre }]}>
             <Text style={[styles.badgeText, { color: dangerous ? c.rust : c.ochre }]}>
@@ -36,8 +42,12 @@ export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
           <Text style={[styles.tagSep, { color: c.textSecondary }]}>·</Text>
           <Text style={[styles.tag, { color: c.ochre }]}>{regionLabels[entry.region]}</Text>
         </View>
-        <Text style={[styles.name, { color: c.text, fontFamily: Fonts?.serif }]}>{entry.name}</Text>
-        {entry.sci ? <Text style={[styles.sci, { color: c.textSecondary }]}>{entry.sci}</Text> : null}
+        <Text style={[styles.name, { color: c.text, fontFamily: Fonts?.serif }]} numberOfLines={2}>
+          {entry.name}
+        </Text>
+        <Text style={[styles.sci, { color: c.textSecondary }]} numberOfLines={1}>
+          {entry.sci ?? ' '}
+        </Text>
         <Text style={[styles.use, { color: c.text }]} numberOfLines={2}>
           {entry.use}
         </Text>
@@ -63,6 +73,8 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     marginBottom: 4,
   },
+  imagePlaceholder: { alignItems: 'center', justifyContent: 'center' },
+  imagePlaceholderGlyph: { fontSize: 28, opacity: 0.5 },
   badge: {
     alignSelf: 'flex-start',
     borderWidth: 1,
