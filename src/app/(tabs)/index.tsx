@@ -68,17 +68,19 @@ export default function BrowseScreen() {
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return entries.filter((e) => {
-      if (community !== 'all' && e.community !== community) return false;
-      if (region !== 'all' && e.region !== region) return false;
-      if (stateFilter !== 'all' && !e.state.includes(stateFilter)) return false;
-      if (!showUnconfirmed && !e.confirmed) return false;
-      if (q) {
-        const hay = `${e.name} ${e.use} ${e.people} ${e.sci ?? ''}`.toLowerCase();
-        if (!hay.includes(q)) return false;
-      }
-      return true;
-    });
+    return entries
+      .filter((e) => {
+        if (community !== 'all' && e.community !== community) return false;
+        if (region !== 'all' && e.region !== region) return false;
+        if (stateFilter !== 'all' && !e.state.includes(stateFilter)) return false;
+        if (!showUnconfirmed && !e.confirmed) return false;
+        if (q) {
+          const hay = `${e.name} ${e.use} ${e.people} ${e.sci ?? ''}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      })
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { ignorePunctuation: true, sensitivity: 'base' }));
   }, [search, community, region, stateFilter, showUnconfirmed]);
 
   return (
