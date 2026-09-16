@@ -2,7 +2,7 @@
 
 A real, installable phone app (iOS + Android, built with Expo) preserving historical American folk and traditional medicine — Native nations, immigrant communities, and settler traditions, circa 1600s to the early 1900s.
 
-Everything works fully offline: all 942 entries and 706 plant photos are bundled into the app itself, so it needs zero internet connection once installed. 826 entries have a photo; 116 are still waiting on one.
+Everything works fully offline: all 942 entries and 706 plant photos are bundled into the app itself, so it needs zero internet connection once installed. 835 entries have a photo; 107 are still waiting on one.
 
 ## What's in the app
 
