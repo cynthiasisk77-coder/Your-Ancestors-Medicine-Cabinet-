@@ -51,7 +51,7 @@ export default function TraditionsScreen() {
   }, []);
 
   const openTradition = (community: Community) => {
-    router.push({ pathname: '/(tabs)', params: { community } });
+    router.navigate({ pathname: '/', params: { community } });
   };
 
   return (

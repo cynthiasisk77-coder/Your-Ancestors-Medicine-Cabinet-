@@ -31,7 +31,7 @@ export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
         {!entry.confirmed && (
           <View style={[styles.badge, { borderColor: dangerous ? c.rust : c.ochre }]}>
             <Text style={[styles.badgeText, { color: dangerous ? c.rust : c.ochre }]}>
-              {dangerous ? 'UNCONFIRMED · DO NOT USE' : 'UNCONFIRMED · LEAD'}
+              {dangerous ? 'NOT VERIFIED · DO NOT USE' : 'NOT INDEPENDENTLY VERIFIED'}
             </Text>
           </View>
         )}

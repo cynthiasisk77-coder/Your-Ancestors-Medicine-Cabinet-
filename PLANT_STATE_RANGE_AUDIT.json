@@ -1,0 +1,2510 @@
+{
+  "generated": "2026-09-17T06:54:01.280Z",
+  "source": "USDA NRCS PLANTS Database",
+  "total_entries": 942,
+  "entries_with_verified_state_range": 526,
+  "entries_without_verified_state_range": 416,
+  "matched_usda_profiles": 459,
+  "unmatched_reason_counts": {
+    "no_scientific_name": 276,
+    "no_verified_usda_state_range": 140
+  },
+  "unmatched_entries": [
+    {
+      "id": "field-horsetail-tea",
+      "name": "Field Horsetail Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "spruce-needle-tea",
+      "name": "Spruce Needle Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "witch-hazel-wash",
+      "name": "Witch Hazel Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cranberry",
+      "name": "Cranberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "boneset-tea",
+      "name": "Boneset Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "sumac-berry-syrup",
+      "name": "Sumac Berry Syrup",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "dried-fruit-bread",
+      "name": "Dried Fruit Bread",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wart-poultice",
+      "name": "Wart Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "root-bark-worm-tea",
+      "name": "Root Bark Worm Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "bark-chew-for-heartburn",
+      "name": "Bark Chew for Heartburn",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "echinacea-root",
+      "name": "Echinacea Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "berry-tea-gargle",
+      "name": "Berry Tea Gargle",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "root-eyewash",
+      "name": "Root Eyewash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "spreading-dogbane",
+      "name": "Spreading Dogbane",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "juniper-tea",
+      "name": "Juniper Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "coyote-tobacco-smoke",
+      "name": "Coyote Tobacco Smoke",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "california-poppy-rinse",
+      "name": "California Poppy Rinse",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "seed-bear-fat-hair-tonic",
+      "name": "Seed & Bear-Fat Hair Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "household-herb-gardens",
+      "name": "Household Herb Gardens",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "sassafras-root-tonic",
+      "name": "Sassafras Root Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "catnip-colic-tea",
+      "name": "Catnip Colic Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "sage-cold-tea",
+      "name": "Sage Cold Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "yarrow",
+      "name": "Yarrow",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wormwood-bitters",
+      "name": "Wormwood Bitters",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "nopal-prickly-pear-poultice",
+      "name": "Nopal (Prickly Pear) Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "root-doctors-granny-women",
+      "name": "Root Doctors & Granny Women",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "foraged-forest-wetland-remedies",
+      "name": "Foraged Forest & Wetland Remedies",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "yellowroot",
+      "name": "Yellowroot",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "black-walnut-hull-wash",
+      "name": "Black Walnut Hull Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "dandelion-root-tonic",
+      "name": "Dandelion Root Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mullein-leaf-tea",
+      "name": "Mullein Leaf Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "horehound-candy-tea",
+      "name": "Horehound Candy & Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "american-skullcap-tea",
+      "name": "American Skullcap Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-cherry-bark-syrup",
+      "name": "Wild Cherry Bark Syrup",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "black-cohosh-root",
+      "name": "Black Cohosh Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "american-ginseng-root",
+      "name": "American Ginseng Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "broadleaf-plantain-poultice",
+      "name": "Broadleaf Plantain Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "goldenseal-root-wash",
+      "name": "Goldenseal Root Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "bear-s-foot-poultice",
+      "name": "Bear's Foot Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "yellow-dock-root-tonic",
+      "name": "Yellow Dock Root Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "lizard-s-tail-root",
+      "name": "Lizard's Tail Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "red-bay-leaf",
+      "name": "Red Bay Leaf",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "canada-goldenrod-tea",
+      "name": "Canada Goldenrod Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "man-of-the-earth-root",
+      "name": "Man-of-the-Earth Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mouse-ear-hawkweed",
+      "name": "Mouse-Ear Hawkweed",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "white-sage-prairie-sage",
+      "name": "White Sage / Prairie Sage",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-bergamot-tea",
+      "name": "Wild Bergamot Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "smooth-sumac-wash",
+      "name": "Smooth Sumac Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "osh-root",
+      "name": "Oshá Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "yerba-mansa-root",
+      "name": "Yerba Mansa Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "northern-prickly-ash-bark",
+      "name": "Northern Prickly Ash Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "yerba-santa-tea",
+      "name": "Yerba Santa Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "devil-s-club-bark",
+      "name": "Devil's Club Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "oregon-grape-root",
+      "name": "Oregon Grape Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "labrador-tea",
+      "name": "Labrador Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "high-bush-cranberry",
+      "name": "High-Bush Cranberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "salmonberry",
+      "name": "Salmonberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "corn-silk-tea",
+      "name": "Corn Silk Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "estafiate-tea",
+      "name": "Estafiate Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "guava-leaf-tea",
+      "name": "Guava Leaf Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "senna-pod-tea",
+      "name": "Senna Pod Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "okra-as-food-medicine",
+      "name": "Okra as Food-Medicine",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cayenne-pepper-liniment",
+      "name": "Cayenne Pepper Liniment",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "turpentine-rub",
+      "name": "Turpentine Rub",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "slippery-elm-bark",
+      "name": "Slippery Elm Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "willow-bark-tea",
+      "name": "Willow Bark Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wintergreen-leaf-tea",
+      "name": "Wintergreen Leaf Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "sweet-birch-tea",
+      "name": "Sweet Birch Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mayapple-root",
+      "name": "Mayapple Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "feverfew-leaf",
+      "name": "Feverfew Leaf",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blackberry-root-decoction",
+      "name": "Blackberry Root Decoction",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "comfrey-knitbone-poultice",
+      "name": "Comfrey (“Knitbone”) Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "arnica-st-john-s-wort-oil",
+      "name": "Arnica & St. John's Wort Oil",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-lettuce-passionflower-tea",
+      "name": "Wild Lettuce & Passionflower Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-onion-scalp-wash",
+      "name": "Wild Onion Scalp Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "stinging-nettle-basswood-hair-rinse",
+      "name": "Stinging Nettle & Basswood Hair Rinse",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "nettle-whipping-for-arthritis",
+      "name": "Nettle Whipping for Arthritis",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "hoof-fungus-rheumatism-treatment",
+      "name": "Hoof Fungus Rheumatism Treatment",
+      "scientific_name": "Fomes fomentarius",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "puffball-for-sheep-bone-fractures",
+      "name": "Puffball for Sheep Bone Fractures",
+      "scientific_name": "Tulostoma campestre / T. brumale",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "oak-gall-eye-remedy",
+      "name": "Oak Gall Eye Remedy",
+      "scientific_name": "Quercus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "oak-bark-cough-remedy",
+      "name": "Oak Bark Cough Remedy",
+      "scientific_name": "Quercus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "copal-resin",
+      "name": "Copal Resin",
+      "scientific_name": "Bursera spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sotol",
+      "name": "Sotol",
+      "scientific_name": "Dasylirion spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "rock-tripe",
+      "name": "Rock Tripe",
+      "scientific_name": "Umbilicaria spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "gooseberry",
+      "name": "Gooseberry",
+      "scientific_name": "Ribes spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "palo-verde",
+      "name": "Palo Verde",
+      "scientific_name": "Parkinsonia spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "good-king-henry",
+      "name": "Good King Henry",
+      "scientific_name": "Blitum bonus-henricus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "pigweed-amaranth",
+      "name": "Pigweed (Amaranth)",
+      "scientific_name": "Amaranthus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "royal-jelly",
+      "name": "Royal Jelly",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "nutritional-yeast",
+      "name": "Nutritional Yeast",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "limewater",
+      "name": "Limewater",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "beef-tea-bone-broth",
+      "name": "Beef Tea (Bone Broth)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "fly-agaric-mushroom",
+      "name": "Fly Agaric Mushroom",
+      "scientific_name": "Amanita muscaria",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "destroying-angel-mushroom",
+      "name": "Destroying Angel Mushroom",
+      "scientific_name": "Amanita bisporigera",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "death-camas",
+      "name": "Death Camas",
+      "scientific_name": "Toxicoscordion venenosum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "artist-s-conk",
+      "name": "Artist's Conk",
+      "scientific_name": "Ganoderma applanatum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "dryad-s-saddle",
+      "name": "Dryad's Saddle",
+      "scientific_name": "Cerioporus squamosus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "oyster-mushroom",
+      "name": "Oyster Mushroom",
+      "scientific_name": "Pleurotus ostreatus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "lion-s-mane-mushroom",
+      "name": "Lion's Mane Mushroom",
+      "scientific_name": "Hericium erinaceus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "maitake-hen-of-the-woods",
+      "name": "Maitake (Hen of the Woods)",
+      "scientific_name": "Grifola frondosa",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "berkeley-s-polypore",
+      "name": "Berkeley's Polypore",
+      "scientific_name": "Bondarzewia berkeleyi",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cauliflower-mushroom",
+      "name": "Cauliflower Mushroom",
+      "scientific_name": "Sparassis americana",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "shaggy-mane-mushroom",
+      "name": "Shaggy Mane Mushroom",
+      "scientific_name": "Coprinus comatus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "morel-mushroom",
+      "name": "Morel Mushroom",
+      "scientific_name": "Morchella americana",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "lobster-mushroom",
+      "name": "Lobster Mushroom",
+      "scientific_name": "Hypomyces lactifluorum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "blewit-mushroom",
+      "name": "Blewit Mushroom",
+      "scientific_name": "Clitocybe nuda",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "king-bolete-porcini",
+      "name": "King Bolete (Porcini)",
+      "scientific_name": "Boletus edulis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "matsutake-mushroom",
+      "name": "Matsutake Mushroom",
+      "scientific_name": "Tricholoma murrillianum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "saffron-milkcap-mushroom",
+      "name": "Saffron Milkcap Mushroom",
+      "scientific_name": "Lactarius deliciosus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "russula-mushrooms",
+      "name": "Russula Mushrooms",
+      "scientific_name": "Russula spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "dulse-pacific",
+      "name": "Dulse (Pacific)",
+      "scientific_name": "Palmaria mollis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "laver",
+      "name": "Laver",
+      "scientific_name": "Pyropia spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "kombu-like-kelp",
+      "name": "Kombu-like Kelp",
+      "scientific_name": "Laminaria setchellii",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "kelp-iodine-industry",
+      "name": "Kelp Iodine Industry",
+      "scientific_name": "Laminaria spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sugar-kelp",
+      "name": "Sugar Kelp",
+      "scientific_name": "Saccharina latissima",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "winged-kelp-american-wakame",
+      "name": "Winged Kelp (American Wakame)",
+      "scientific_name": "Alaria marginata",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "puffball-for-sores-yuki",
+      "name": "Puffball for Sores (Yuki)",
+      "scientific_name": "Lycoperdon sp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "puffball-necklace-for-respiratory-protection-blackfoot",
+      "name": "Puffball Necklace for Respiratory Protection (Blackfoot)",
+      "scientific_name": "Lycoperdon / Calvatia spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "puffball-spore-powder-for-burns-secwepemc",
+      "name": "Puffball Spore Powder for Burns (Secwepemc)",
+      "scientific_name": "Lycoperdon / Calvatia spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "puffball-wound-care-inuit-nunavik",
+      "name": "Puffball Wound Care (Inuit, Nunavik)",
+      "scientific_name": "Lycoperdon spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "hickory-nuts-as-food-east-texas",
+      "name": "Hickory Nuts as Food (East Texas)",
+      "scientific_name": "Carya spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "tinder-fungus-additional-traditional-uses",
+      "name": "Tinder Fungus — Additional Traditional Uses",
+      "scientific_name": "Fomes fomentarius",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "east-texas-pineywoods-forest-resources",
+      "name": "East Texas Pineywoods Forest Resources",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "oak-leaves-for-ceremonial-cleansing-ramah-navajo",
+      "name": "Oak Leaves for Ceremonial Cleansing (Ramah Navajo)",
+      "scientific_name": "Quercus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "acorns-as-staple-food-multiple-indigenous-groups",
+      "name": "Acorns as Staple Food (Multiple Indigenous Groups)",
+      "scientific_name": "Quercus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sphagnum-moss-for-hygiene-utility-potawatomi-ojibwe",
+      "name": "Sphagnum Moss for Hygiene & Utility (Potawatomi & Ojibwe)",
+      "scientific_name": "Sphagnum spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "elm-inner-bark-as-emergency-food-east-texas",
+      "name": "Elm Inner Bark as Emergency Food (East Texas)",
+      "scientific_name": "Ulmus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "kola-nut",
+      "name": "Kola Nut",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "gum-tree-leaves",
+      "name": "Gum-Tree Leaves",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "john-the-conqueror-root-high-john-root",
+      "name": "John the Conqueror Root (High John Root)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "black-snakeroot",
+      "name": "Black Snakeroot",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "oak-bark",
+      "name": "Oak Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blanketflower",
+      "name": "Blanketflower",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-tomatillo",
+      "name": "Wild Tomatillo",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "partridge-pea",
+      "name": "Partridge Pea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "snowberry-coralberry",
+      "name": "Snowberry / Coralberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "catclaw-acacia",
+      "name": "Catclaw Acacia",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "lousewort",
+      "name": "Lousewort",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "american-sycamore",
+      "name": "American Sycamore",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "redbud",
+      "name": "Redbud",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "thimbleberry",
+      "name": "Thimbleberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "smartweed",
+      "name": "Smartweed",
+      "scientific_name": "Persicaria punctata",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "beaver-castoreum",
+      "name": "Beaver Castoreum",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "eggshell-oyster-shell-powder",
+      "name": "Eggshell & Oyster Shell Powder",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "animal-hide-poultice",
+      "name": "Animal Hide Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "nutmeg",
+      "name": "Nutmeg",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "borax",
+      "name": "Borax",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "alum",
+      "name": "Alum",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chalk",
+      "name": "Chalk",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "iron-rust",
+      "name": "Iron Rust",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "deer-antler",
+      "name": "Deer Antler",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "whey",
+      "name": "Whey",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "coconut-oil",
+      "name": "Coconut Oil",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "garlic-necklace-anti-worm",
+      "name": "Garlic Necklace (Anti-Worm)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "saltwater-joint-soak",
+      "name": "Saltwater Joint Soak",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "four-thieves-vinegar",
+      "name": "Four Thieves Vinegar",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "poppy-seed-sleeping-syrup",
+      "name": "Poppy-Seed Sleeping Syrup",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "krupnikas",
+      "name": "Krupnikas",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "vodka-compress-for-fever-ok-ady-z-w-dki",
+      "name": "Vodka Compress for Fever (Okłady z Wódki)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blessed-herb-bundle-matka-boska-zielna",
+      "name": "Blessed Herb Bundle (Matka Boska Zielna)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "gromnica-blessed-candle",
+      "name": "Gromnica (Blessed Candle)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "amber-teething-necklace-naszyjnik-z-bursztynu",
+      "name": "Amber Teething Necklace (Naszyjnik z Bursztynu)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "ch-de-t-lia-linden-flower-tea",
+      "name": "Chá de Tília (Linden Flower Tea)",
+      "scientific_name": "Tilia spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "panos-de-vinagre-vinegar-compress-for-fever",
+      "name": "Panos de Vinagre (Vinegar Compress for Fever)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "resguardo-forty-days-of-postpartum-care",
+      "name": "Resguardo (Forty Days of Postpartum Care)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "quebranto-and-the-benzedeira-s-blessing",
+      "name": "Quebranto and the Benzedeira's Blessing",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "milagres-and-the-feast-of-senhor-santo-cristo",
+      "name": "Milagres and the Feast of Senhor Santo Cristo",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cravo-clove-for-toothache",
+      "name": "Cravo (Clove) for Toothache",
+      "scientific_name": "Syzygium aromaticum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "graisse-de-siffleux-groundhog-fat-chest-rub",
+      "name": "Graisse de Siffleux (Groundhog Fat) Chest Rub",
+      "scientific_name": "Marmota monax",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "le-rebouteux-the-bonesetter",
+      "name": "Le Rebouteux (The Bonesetter)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "relevailles-postpartum-rest-and-churching",
+      "name": "Relevailles (Postpartum Rest and Churching)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "p-lerinage-sainte-anne-de-beaupr-healing-pilgrimage",
+      "name": "Pèlerinage à Sainte-Anne-de-Beaupré (Healing Pilgrimage)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "fr-re-andr-s-blessed-oil",
+      "name": "Frère André's Blessed Oil",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "frotter-avec-de-la-neige-rubbing-frostbite-with-snow",
+      "name": "Frotter avec de la Neige (Rubbing Frostbite with Snow)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "garlic-soup-esne-ka",
+      "name": "Garlic Soup (Česnečka)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "carlsbad-mineral-salts-karlovarsk-s-l",
+      "name": "Carlsbad Mineral Salts (Karlovarská Sůl)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "goose-fat-skin-salve-hus-s-dlo",
+      "name": "Goose Fat Skin Salve (Husí Sádlo)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cold-curd-cheese-compress-tvarohov-obklad",
+      "name": "Cold Curd Cheese Compress (Tvarohový Obklad)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chamomile-steam-eyewash-he-m-nek",
+      "name": "Chamomile Steam & Eyewash (Heřmánek)",
+      "scientific_name": "Matricaria chamomilla",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "beer-soup-pivn-pol-vka",
+      "name": "Beer Soup (Pivní Polévka)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blessed-herb-bundle-bylinky-for-the-feast-of-the-assumption",
+      "name": "Blessed Herb Bundle (Bylinky) for the Feast of the Assumption",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "kerosene-on-a-sugar-cube",
+      "name": "Kerosene on a Sugar Cube",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "propolis-tincture",
+      "name": "Propolis Tincture",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "vodka-and-water-fever-rub",
+      "name": "Vodka-and-Water Fever Rub",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "salo-with-garlic",
+      "name": "Salo with Garlic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "poppy-seeds-against-illness-bringing-spirits",
+      "name": "Poppy Seeds Against Illness-Bringing Spirits",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blessing-of-herbs-sviachennia-zillia",
+      "name": "Blessing of Herbs (Sviachennia Zillia)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "garlic-on-a-string",
+      "name": "Garlic on a String",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "warmed-buckwheat-groats-ear-pillow",
+      "name": "Warmed Buckwheat Groats Ear Pillow",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "sauerkraut-brine-rozsil",
+      "name": "Sauerkraut Brine (Rozsil)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mustard-rye-plaster",
+      "name": "Mustard-Rye Plaster",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blessed-water-at-theophany-yordan",
+      "name": "Blessed Water at Theophany (Yordan)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cupping-banky",
+      "name": "Cupping (Banky)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "amber-gintaras-teething-necklace",
+      "name": "Amber (Gintaras) Teething Necklace",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "hawthorn-berry-tonic",
+      "name": "Hawthorn Berry Tonic",
+      "scientific_name": "Crataegus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "ergot-pulvis-parturiens",
+      "name": "Ergot (Pulvis Parturiens)",
+      "scientific_name": "Claviceps purpurea",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "oil-of-cloves",
+      "name": "Oil of Cloves",
+      "scientific_name": "Syzygium aromaticum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "baking-soda",
+      "name": "Baking Soda",
+      "scientific_name": "Sodium bicarbonate",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "coal-oil-kerosene",
+      "name": "Coal Oil (Kerosene)",
+      "scientific_name": "Petroleum distillate",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "calf-s-foot-jelly",
+      "name": "Calf's Foot Jelly",
+      "scientific_name": "Collagen-derived gelatin",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "fleischmann-s-yeast-cakes",
+      "name": "Fleischmann's Yeast Cakes",
+      "scientific_name": "Saccharomyces cerevisiae",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "tincture-of-myrrh",
+      "name": "Tincture of Myrrh",
+      "scientific_name": "Commiphora myrrha",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "bull-kelp",
+      "name": "Bull Kelp",
+      "scientific_name": "Nereocystis luetkeana",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "rockweed",
+      "name": "Rockweed",
+      "scientific_name": "Fucus distichus / Fucus gardneri",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sweetgum-twig-yellowroot-mouth-care",
+      "name": "Sweetgum Twig & Yellowroot Mouth Care",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "fire-cider-master-tonic",
+      "name": "Fire Cider (Master Tonic)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "pine-pitch-tallow-chest-rub",
+      "name": "Pine Pitch & Tallow Chest Rub",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cascara-sagrada-bark",
+      "name": "Cascara Sagrada Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "uva-ursi-bearberry-leaf-tea",
+      "name": "Uva Ursi (Bearberry) Leaf Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "black-drawing-salve",
+      "name": "Black Drawing Salve",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "bread-milk-poultice",
+      "name": "Bread & Milk Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "the-dry-hot-salt-bag",
+      "name": "The Dry Hot Salt Bag",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "browned-wheat-flour",
+      "name": "Browned Wheat Flour",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "peach-leaf-tea",
+      "name": "Peach Leaf Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wood-ash-lard-paste",
+      "name": "Wood Ash & Lard Paste",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "white-oak-bark-walnut-hull-footbath",
+      "name": "White Oak Bark & Walnut Hull Footbath",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "calendula-nursing-salve",
+      "name": "Calendula Nursing Salve",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mullein-garlic-ear-oil",
+      "name": "Mullein & Garlic Ear Oil",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-ginger-root-tea",
+      "name": "Wild Ginger Root Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "rattlesnake-master-root",
+      "name": "Rattlesnake Master Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "saw-palmetto-berries",
+      "name": "Saw Palmetto Berries",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "american-beautyberry-leaves",
+      "name": "American Beautyberry Leaves",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "yaupon-holly-tea",
+      "name": "Yaupon Holly Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-yam-root",
+      "name": "Wild Yam Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "skunk-cabbage-root",
+      "name": "Skunk Cabbage Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "fireweed-tea",
+      "name": "Fireweed Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "joe-pye-weed-gravel-root",
+      "name": "Joe-Pye Weed (Gravel Root)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-licorice-root",
+      "name": "Wild Licorice Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "purple-prairie-clover",
+      "name": "Purple Prairie Clover",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "calamus-sweet-flag-root",
+      "name": "Calamus (Sweet Flag) Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "red-osier-dogwood-bark",
+      "name": "Red-Osier Dogwood Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "goat-weed",
+      "name": "Goat Weed",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mustard-plaster",
+      "name": "Mustard Plaster",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "carron-oil-burn-remedy",
+      "name": "“Carron Oil” Burn Remedy",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "virginia-snakeroot",
+      "name": "Virginia Snakeroot",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "prairie-coneflower",
+      "name": "Prairie Coneflower",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "fringed-sagebrush",
+      "name": "Fringed Sagebrush",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "big-sagebrush",
+      "name": "Big Sagebrush",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "lingonberry",
+      "name": "Lingonberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "rosinweed-cutleaf-coneflower",
+      "name": "Rosinweed & Cutleaf Coneflower",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "milkweed-sap",
+      "name": "Milkweed Sap",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "lobelia-indian-tobacco",
+      "name": "Lobelia (Indian Tobacco)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-indigo-root",
+      "name": "Wild Indigo Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "bloodroot",
+      "name": "Bloodroot",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "elderberry",
+      "name": "Elderberry",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blue-cohosh-root",
+      "name": "Blue Cohosh Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cotton-root-bark",
+      "name": "Cotton Root Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "pinkroot-indian-pink",
+      "name": "Pinkroot (Indian Pink)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "lady-s-slipper-root",
+      "name": "Lady's Slipper Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "solomon-s-seal",
+      "name": "Solomon's Seal",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wood-sorrel",
+      "name": "Wood Sorrel",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "pleurisy-root-butterfly-weed",
+      "name": "Pleurisy Root (Butterfly Weed)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "roasted-onion-ear-pack",
+      "name": "Roasted Onion Ear Pack",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "meadowsweet",
+      "name": "Meadowsweet",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "flowering-dogwood-bark",
+      "name": "Flowering Dogwood Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "tulip-tree-tulip-poplar-bark",
+      "name": "Tulip Tree (Tulip Poplar) Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "indian-physic-root",
+      "name": "Indian Physic Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mallow-marshmallow-root",
+      "name": "Mallow & Marshmallow Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "elecampane-root",
+      "name": "Elecampane Root",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "fennel-wild-carrot-seed",
+      "name": "Fennel & Wild Carrot Seed",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "spicebush-twig-tea",
+      "name": "Spicebush Twig Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "wild-mint-tea",
+      "name": "Wild Mint Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "castor-oil-foot-pack",
+      "name": "Castor Oil Foot Pack",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chaparral-creosote-bush",
+      "name": "Chaparral (Creosote Bush)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "larkspur-seed-wash",
+      "name": "Larkspur Seed Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "pokeweed",
+      "name": "Pokeweed",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "aloe-s-bila",
+      "name": "Aloe (Sábila)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "red-clover",
+      "name": "Red Clover",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cobwebs-for-bleeding",
+      "name": "Cobwebs for Bleeding",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "clay-kaolin-poultice",
+      "name": "Clay (Kaolin) Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "charcoal-for-poisoning-upset-stomach",
+      "name": "Charcoal for Poisoning & Upset Stomach",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "apple-cider-vinegar-tonic",
+      "name": "Apple Cider Vinegar Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "molasses-tonic",
+      "name": "Molasses Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "hot-toddy",
+      "name": "Hot Toddy",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cramp-bark",
+      "name": "Cramp Bark",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "hepatica-leaf",
+      "name": "Hepatica Leaf",
+      "scientific_name": "Hepatica americana / Hepatica acutiloba",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "blueberry",
+      "name": "Blueberry",
+      "scientific_name": "Vaccinium spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "yucca-root",
+      "name": "Yucca Root",
+      "scientific_name": "Yucca spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "alaska-wormwood",
+      "name": "Alaska Wormwood",
+      "scientific_name": "Artemisia tilesii",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "peppermint-tea",
+      "name": "Peppermint Tea",
+      "scientific_name": "Mentha x piperita",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "chamomile-tea",
+      "name": "Chamomile Tea",
+      "scientific_name": "Matricaria chamomilla",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "rocky-mountain-beeplant",
+      "name": "Rocky Mountain Beeplant",
+      "scientific_name": "Peritoma serrulata",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sweet-cicely-root",
+      "name": "Sweet Cicely Root",
+      "scientific_name": "Osmorhiza spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "written-bread-charm-for-fever",
+      "name": "Written Bread Charm for Fever",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cradle-dolls-against-the-huldrefolk",
+      "name": "Cradle Dolls Against the Huldrefolk",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "sulfur-in-the-shoes",
+      "name": "Sulfur-in-the-Shoes",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "axle-grease-wound-dressing",
+      "name": "Axle-Grease Wound Dressing",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "flour-butter-egg-poultice",
+      "name": "Flour, Butter & Egg Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "potato-wart-cure",
+      "name": "Potato Wart Cure",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "prayer-to-stop-severe-bleeding",
+      "name": "Prayer to Stop Severe Bleeding",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mustard-plaster-alcohol-tonic",
+      "name": "Mustard Plaster & Alcohol Tonic",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "massage-for-women-s-complaints",
+      "name": "Massage for Women's Complaints",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "manual-fetal-repositioning",
+      "name": "Manual Fetal Repositioning",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "postpartum-recovery-soups",
+      "name": "Postpartum Recovery Soups",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "nine-days-of-postpartum-bed-rest",
+      "name": "Nine Days of Postpartum Bed Rest",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "urine-wash-for-burns-eye-complaints",
+      "name": "Urine Wash for Burns & Eye Complaints",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "pasma-hilot",
+      "name": "Pasma & Hilot",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chokeberry",
+      "name": "Chokeberry",
+      "scientific_name": "Aronia spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "wild-rose-hip-tea",
+      "name": "Wild Rose Hip Tea",
+      "scientific_name": "Rosa spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "scientific_name": "Apis mellifera",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "beeswax-salve-base",
+      "name": "Beeswax Salve Base",
+      "scientific_name": "Apis mellifera",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sphagnum-moss-dressing",
+      "name": "Sphagnum Moss Dressing",
+      "scientific_name": "Sphagnum spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "usnea-beard-lichen",
+      "name": "Usnea (Beard Lichen)",
+      "scientific_name": "Usnea spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "lungwort-lichen",
+      "name": "Lungwort Lichen",
+      "scientific_name": "Lobaria pulmonaria",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "reindeer-lichen",
+      "name": "Reindeer Lichen",
+      "scientific_name": "Cladonia rangiferina",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "giant-puffball",
+      "name": "Giant Puffball",
+      "scientific_name": "Calvatia gigantea / Lycoperdon spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "tinder-fungus-hoof-fungus",
+      "name": "Tinder Fungus (Hoof Fungus)",
+      "scientific_name": "Fomes fomentarius",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "bear-grease",
+      "name": "Bear Grease",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "agarikon",
+      "name": "Agarikon",
+      "scientific_name": "Fomitopsis officinalis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "punk-ash-tobacco-iqmik",
+      "name": "Punk Ash Tobacco (Iqmik)",
+      "scientific_name": "Phellinus igniarius",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "mountain-mint-tea",
+      "name": "Mountain Mint Tea",
+      "scientific_name": "Pycnanthemum spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "irish-moss-carrageen-moss",
+      "name": "Irish Moss (Carrageen Moss)",
+      "scientific_name": "Chondrus crispus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "scalteen-whiskey-milk-punch",
+      "name": "Scalteen (Whiskey Milk Punch)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "poteen-liniment-for-aching-joints",
+      "name": "Poteen Liniment for Aching Joints",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "buttermilk-skin-wash",
+      "name": "Buttermilk Skin Wash",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "the-sick-call-set",
+      "name": "The Sick-Call Set",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "blessing-of-the-throats",
+      "name": "Blessing of the Throats",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "gold-ring-for-a-stye",
+      "name": "Gold Ring for a Stye",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "seventh-son-of-a-seventh-son",
+      "name": "Seventh Son of a Seventh Son",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "st-brigid-s-cross",
+      "name": "St. Brigid's Cross",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "goose-grease-flannel-chest-rub",
+      "name": "Goose Grease & Flannel Chest Rub",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "zabaglione",
+      "name": "Zabaglione",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "malocchio-evil-eye-test",
+      "name": "Malocchio (Evil Eye) Test",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cornicello-italian-horn",
+      "name": "Cornicello (Italian Horn)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "ventosa-cupping",
+      "name": "Ventosa (Cupping)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chicken-soup",
+      "name": "Chicken Soup",
+      "scientific_name": "Gallus gallus domesticus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "gogl-mogl-guggle-muggle",
+      "name": "Gogl-Mogl (Guggle Muggle)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "bankes-cupping",
+      "name": "Bankes (Cupping)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "schmaltz-rendered-chicken-fat",
+      "name": "Schmaltz (Rendered Chicken Fat)",
+      "scientific_name": "Gallus gallus domesticus",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "onion-and-honey",
+      "name": "Onion and Honey",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "roite-bindele-red-ribbon",
+      "name": "Roite Bindele (Red Ribbon)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "tea-with-jam",
+      "name": "Tea with Jam",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "kimpetbrivl-childbirth-amulet",
+      "name": "Kimpetbrivl (Childbirth Amulet)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "thread-biting-while-mending",
+      "name": "Thread-Biting While Mending",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "cod-liver-oil-tran",
+      "name": "Cod Liver Oil (Tran)",
+      "scientific_name": "Gadus morhua",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "angelica-root-kvann",
+      "name": "Angelica Root (Kvann)",
+      "scientific_name": "Angelica archangelica",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "filmj-lk-soured-milk",
+      "name": "Filmjölk (Soured Milk)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "rye-bread-poultice",
+      "name": "Rye Bread Poultice",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "aquavit",
+      "name": "Aquavit",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "kam-wah-chung-co",
+      "name": "Kam Wah Chung & Co.",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chew-kee-store",
+      "name": "Chew Kee Store",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "chinatown-herb-shops",
+      "name": "Chinatown Herb Shops",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "ginger-root",
+      "name": "Ginger Root",
+      "scientific_name": "Zingiber officinale",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "railroad-camp-tea",
+      "name": "Railroad Camp Tea",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "railroad-camp-medicine-vials",
+      "name": "Railroad Camp Medicine Vials",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "substitute-herbs-after-exclusion",
+      "name": "Substitute Herbs After Exclusion",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "mari-simonson-neighbor-midwife",
+      "name": "Mari Simonson, Neighbor-Midwife",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "olene-solberg-s-cupping",
+      "name": "Olene Solberg's Cupping",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "severin-almklov-s-itch-specific",
+      "name": "Severin Almklov's “Itch Specific”",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "norwegian-language-doctor-books",
+      "name": "Norwegian-Language Doctor Books",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "dr-per-herb-drops",
+      "name": "Dråper (Herb Drops)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "svarteb-ker-black-book-charms",
+      "name": "Svartebøker (Black-Book Charms)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "the-road-camp-flu-brew",
+      "name": "The Road-Camp Flu Brew",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "doc-hay-s-herbs-for-women-s-complaints",
+      "name": "Doc Hay's Herbs for Women's Complaints",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "doc-hay-s-mail-order-prescriptions",
+      "name": "Doc Hay's Mail-Order Prescriptions",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "the-kam-wah-chung-apothecary-shelves",
+      "name": "The Kam Wah Chung Apothecary Shelves",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "doc-hay-s-scraping-treatment",
+      "name": "Doc Hay's Scraping Treatment",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "dr-goto-s-hansen-s-disease-treatment",
+      "name": "Dr. Goto's Hansen's Disease Treatment",
+      "scientific_name": "Hydnocarpus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "father-damien-s-kalaupapa-bathhouse",
+      "name": "Father Damien's Kalaupapa Bathhouse",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "the-kalaupapa-petition-for-dr-goto",
+      "name": "The Kalaupapa Petition for Dr. Goto",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "david-keaweamahi-s-journey-to-japan",
+      "name": "David Keaweamahi's Journey to Japan",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "alice-ball-and-the-chaulmoogra-injection",
+      "name": "Alice Ball and the Chaulmoogra Injection",
+      "scientific_name": "Hydnocarpus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "benedicaria-the-things-we-do",
+      "name": "Benedicaria (The Things We Do)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "the-sauna-as-birthing-room",
+      "name": "The Sauna as Birthing Room",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "alder-leaves-cones-english-bay-port-graham-alutiiq",
+      "name": "Alder Leaves & Cones (English Bay & Port Graham Alutiiq)",
+      "scientific_name": "Alnus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "bracket-fungus-additional-uses-beyond-iqmik-alaska",
+      "name": "Bracket Fungus — Additional Uses Beyond Iqmik (Alaska)",
+      "scientific_name": "Phellinus igniarius / Phellinus tremulae",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "willow-bark-alaska-regional-uses",
+      "name": "Willow Bark — Alaska Regional Uses",
+      "scientific_name": "Salix spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "porcelain-berry",
+      "name": "Porcelain Berry",
+      "scientific_name": "Ampelopsis glandulosa",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "reishi-like-varnish-conk",
+      "name": "Reishi-Like Varnish Conk",
+      "scientific_name": "Ganoderma curtisii",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "earthstar",
+      "name": "Earthstar",
+      "scientific_name": "Geastrum saccatum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "fish-oil-household",
+      "name": "Fish Oil (General Household Use)",
+      "scientific_name": null,
+      "reason": "no_scientific_name"
+    },
+    {
+      "id": "snapdragon-vine",
+      "name": "Snapdragon Vine",
+      "scientific_name": "Maurandya antirrhiniflora",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "starflower",
+      "name": "Starflower",
+      "scientific_name": "Lysimachia borealis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "lime",
+      "name": "Lime",
+      "scientific_name": "Citrus aurantiifolia",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "bitter-orange",
+      "name": "Bitter Orange",
+      "scientific_name": "Citrus aurantium",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "grapefruit",
+      "name": "Grapefruit",
+      "scientific_name": "Citrus paradisi",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sesame",
+      "name": "Sesame",
+      "scientific_name": "Sesamum indicum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cacao",
+      "name": "Cacao",
+      "scientific_name": "Theobroma cacao",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cassia-cinnamon",
+      "name": "Cassia Cinnamon",
+      "scientific_name": "Cinnamomum cassia",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "mace",
+      "name": "Mace",
+      "scientific_name": "Myristica fragrans aril",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cardamom",
+      "name": "Cardamom",
+      "scientific_name": "Elettaria cardamomum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "gypsum",
+      "name": "Gypsum",
+      "scientific_name": "Calcium sulfate",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "musk",
+      "name": "Musk",
+      "scientific_name": "Musk animal secretion",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "yogurt",
+      "name": "Yogurt",
+      "scientific_name": "Fermented milk",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cobweb",
+      "name": "Cobweb",
+      "scientific_name": "Spider silk/webbing",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "agar",
+      "name": "Agar",
+      "scientific_name": "Gelidium / Gracilaria polysaccharide",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "carrageenan-seaweed",
+      "name": "Carrageenan Seaweed",
+      "scientific_name": "Chondrus / Kappaphycus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "koji",
+      "name": "Koji",
+      "scientific_name": "Aspergillus oryzae",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "kombucha-culture",
+      "name": "Kombucha Culture",
+      "scientific_name": "SCOBY mixed culture",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sourdough-starter",
+      "name": "Sourdough Starter",
+      "scientific_name": "Lactic acid bacteria + yeasts",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sesame-oil",
+      "name": "Sesame Oil",
+      "scientific_name": "Sesamum indicum seed oil",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cottonseed-oil",
+      "name": "Cottonseed Oil",
+      "scientific_name": "Gossypium spp. seed oil",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "cinnamon-oil",
+      "name": "Cinnamon Oil",
+      "scientific_name": "Cinnamomum spp. essential oil",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "menthol",
+      "name": "Menthol",
+      "scientific_name": "Mentha-derived menthol",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "thymol",
+      "name": "Thymol",
+      "scientific_name": "Thymus/Monarda-derived thymol",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "eugenol",
+      "name": "Eugenol",
+      "scientific_name": "Clove-derived eugenol",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "capsaicin",
+      "name": "Capsaicin",
+      "scientific_name": "Capsicum-derived capsaicin",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "salicin",
+      "name": "Salicin",
+      "scientific_name": "Salix-derived salicin",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "methyl-salicylate",
+      "name": "Methyl Salicylate",
+      "scientific_name": "Gaultheria-derived methyl salicylate",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "berberine",
+      "name": "Berberine",
+      "scientific_name": "Berberis/Hydrastis-derived berberine",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "podophyllotoxin",
+      "name": "Podophyllotoxin",
+      "scientific_name": "Podophyllum-derived podophyllotoxin",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "silibinin",
+      "name": "Silibinin",
+      "scientific_name": "Silybum marianum-derived silibinin",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sphagnum-moss-wound-dressing-potawatomi",
+      "name": "Sphagnum Moss Wound Dressing (Potawatomi)",
+      "scientific_name": "Sphagnum spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "elder-flowers-stems-louisiana-creole",
+      "name": "American Elderberry Flowers & Stems (Louisiana Creole)",
+      "scientific_name": "Sambucus canadensis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "elder-leaves-louisiana-creole",
+      "name": "American Elderberry Leaves (Louisiana Creole)",
+      "scientific_name": "Sambucus canadensis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "american-black-nightshade-louisiana-creole",
+      "name": "American Black Nightshade, Green Berries & Root (Louisiana Creole)",
+      "scientific_name": "Solanum americanum",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "hawthorn-bark-hunting-lure",
+      "name": "Hawthorn Bark Hunting Lure",
+      "scientific_name": "Crataegus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "reindeer-lichen-newborn-wash",
+      "name": "Reindeer Lichen Newborn Wash",
+      "scientific_name": "Cladonia rangiferina",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "hawthorn-fruit-bark-womens-medicine",
+      "name": "Hawthorn Fruit & Bark Women's Medicine",
+      "scientific_name": "Crataegus spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "giant-puffball-nosebleed-remedy",
+      "name": "Giant Puffball Nosebleed Remedy",
+      "scientific_name": "Calvatia craniiformis",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "coontie-root-starch-seminole",
+      "name": "Coontie Root Starch (Seminole)",
+      "scientific_name": "Zamia integrifolia",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "marlberry-fruit-and-leaf-south-florida",
+      "name": "Marlberry Fruit and Leaves (South Florida)",
+      "scientific_name": "Ardisia escallonioides",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "sawgrass-thatching-miccosukee-seminole",
+      "name": "Sawgrass Thatching and Weaving (Miccosukee & Seminole)",
+      "scientific_name": "Cladium jamaicense",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "prickly-pear-pads-and-fruit",
+      "name": "Prickly Pear Pads & Fruit",
+      "scientific_name": "Opuntia species",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "willow-bark-california-indigenous",
+      "name": "Willow Bark (California Indigenous Use)",
+      "scientific_name": "Salix spp.",
+      "reason": "no_verified_usda_state_range"
+    },
+    {
+      "id": "manzanita-leaf-tea-urinary-diarrhea",
+      "name": "Manzanita Leaf Tea and Berry Drink",
+      "scientific_name": "Arctostaphylos spp.",
+      "reason": "no_verified_usda_state_range"
+    }
+  ]
+}

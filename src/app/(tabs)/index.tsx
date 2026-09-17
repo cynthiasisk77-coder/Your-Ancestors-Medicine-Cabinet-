@@ -1,5 +1,5 @@
 import { useLocalSearchParams } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   FlatList,
   Modal,
@@ -18,6 +18,7 @@ import { EntryCard } from '@/components/EntryCard';
 import { Colors, Fonts, Spacing, type ThemeColors } from '@/constants/theme';
 import { entries } from '@/data/entries';
 import { communityLabels, communityOrder, regionLabels, regionOrder, stateLabels } from '@/data/labels';
+import { getPlantStateRange } from '@/data/plant-state-ranges';
 import type { Community, Region } from '@/types';
 
 const GRID_GAP = Spacing.two;
@@ -36,33 +37,44 @@ export default function BrowseScreen() {
   const [stateFilter, setStateFilter] = useState<string | 'all'>('all');
   const [showUnconfirmed, setShowUnconfirmed] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
+  const searchInputRef = useRef<TextInput>(null);
 
-  useEffect(() => {
-    if (params.region && regionOrder.includes(params.region as Region)) {
-      setRegion(params.region as Region);
-    }
-  }, [params.region]);
-
-  useEffect(() => {
-    if (params.community && communityOrder.includes(params.community as Community)) {
-      setCommunity(params.community as Community);
-    }
-  }, [params.community]);
-
+  // A selection from another tab starts a fresh, single-purpose filter. Without
+  // this reset, an old tradition or region can silently reduce state results.
   useEffect(() => {
     if (params.state && params.state in stateLabels) {
+      setSearch('');
+      setCommunity('all');
+      setRegion('all');
       setStateFilter(params.state);
+      return;
     }
-  }, [params.state]);
+    if (params.community && communityOrder.includes(params.community as Community)) {
+      setSearch('');
+      setCommunity(params.community as Community);
+      setRegion('all');
+      setStateFilter('all');
+      return;
+    }
+    if (params.region && regionOrder.includes(params.region as Region)) {
+      setSearch('');
+      setCommunity('all');
+      setRegion(params.region as Region);
+      setStateFilter('all');
+    }
+  }, [params.state, params.community, params.region]);
 
   // The header search button sends a fresh `reset` value on every tap (even if
   // already on this screen), so a filter picked up from the States or
   // Traditions tab doesn't silently keep narrowing results afterward.
   useEffect(() => {
     if (params.reset) {
+      setSearch('');
       setCommunity('all');
       setRegion('all');
       setStateFilter('all');
+      const frame = requestAnimationFrame(() => searchInputRef.current?.focus());
+      return () => cancelAnimationFrame(frame);
     }
   }, [params.reset]);
 
@@ -72,7 +84,7 @@ export default function BrowseScreen() {
       .filter((e) => {
         if (community !== 'all' && e.community !== community) return false;
         if (region !== 'all' && e.region !== region) return false;
-        if (stateFilter !== 'all' && !e.state.includes(stateFilter)) return false;
+        if (stateFilter !== 'all' && !getPlantStateRange(e.id)?.states.includes(stateFilter)) return false;
         if (!showUnconfirmed && !e.confirmed) return false;
         if (q) {
           const hay = `${e.name} ${e.use} ${e.people} ${e.sci ?? ''}`.toLowerCase();
@@ -87,6 +99,7 @@ export default function BrowseScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]} edges={['left', 'right']}>
       <View style={styles.controls}>
         <TextInput
+          ref={searchInputRef}
           value={search}
           onChangeText={setSearch}
           placeholder="Search a remedy, ailment, or people…"
@@ -104,7 +117,7 @@ export default function BrowseScreen() {
             onPress={() => setStateFilter('all')}
             style={[styles.stateBanner, { borderColor: colors.accent, backgroundColor: colors.backgroundElement }]}>
             <Text style={[styles.stateBannerText, { color: colors.text }]}>
-              Showing {stateLabels[stateFilter] ?? stateFilter} only
+              Plants USDA records in {stateLabels[stateFilter] ?? stateFilter}
             </Text>
             <Text style={[styles.stateBannerClear, { color: colors.accent }]}>✕ clear</Text>
           </Pressable>
@@ -173,8 +186,7 @@ export default function BrowseScreen() {
             trackColor={{ true: colors.accent }}
           />
           <Text style={[styles.toggleLabel, { color: colors.textSecondary }]}>
-            Also show unresearched leads ({entries.filter((e) => !e.confirmed).length} not yet
-            written up)
+            Also show entries that could not be independently verified ({entries.filter((e) => !e.confirmed).length})
           </Text>
         </Pressable>
       </View>
