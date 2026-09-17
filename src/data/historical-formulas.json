@@ -1,0 +1,112 @@
+[
+  {
+    "id": "barley-water-new-royal-1920",
+    "entry_id": "barley-water",
+    "title": "Barley water recorded in 1920",
+    "formula_type": "beverage",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "2 tablespoons",
+        "item": "pearl barley"
+      },
+      {
+        "amount": "2 quarts",
+        "item": "cold water"
+      }
+    ],
+    "recorded_method": [
+      "The barley was washed and soaked for several hours in the measured cold water.",
+      "It was then boiled gently in the same water for 2 hours.",
+      "The source also offered a double-boiler method: 4 hours of cooking, or until the liquid was reduced by half."
+    ],
+    "source_fit": "Direct period match for the archived preparation. This American cookbook printed the measured formula under “Invalid Cookery”; that placement documents historical use, not medical effectiveness.",
+    "archive_note": "Optional lemon juice, sugar, or salt were mentioned only “to taste” in the source, so they are not listed as measured ingredients here.",
+    "safety_notes": [
+      "Barley contains gluten and is not suitable for people with celiac disease.",
+      "This is a food-history record, not a substitute for medical care or an oral rehydration solution.",
+      "It should not be used as infant formula or as a substitute for breast milk or commercial infant formula.",
+      "If retained after cooking, it should be refrigerated within 2 hours and discarded after 3 to 4 days."
+    ],
+    "primary_source": {
+      "title": "The New Royal Cook Book",
+      "author": "Royal Baking Powder Co.",
+      "publication_year": 1920,
+      "page": "45",
+      "url": "https://www.gutenberg.org/files/38193/38193-h/38193-h.htm#Page_45"
+    },
+    "safety_sources": [
+      {
+        "title": "Eating, Diet, & Nutrition for Celiac Disease",
+        "publisher": "National Institute of Diabetes and Digestive and Kidney Diseases",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/eating-diet-nutrition"
+      },
+      {
+        "title": "Food Safety and Eating Out",
+        "publisher": "FoodSafety.gov",
+        "url": "https://www.foodsafety.gov/blog/food-safety-and-eating-out"
+      },
+      {
+        "title": "About Infant and Toddler Nutrition",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/infant-toddler-nutrition/about/index.html"
+      }
+    ],
+    "reviewed_on": "2026-09-17"
+  },
+  {
+    "id": "cup-of-arrowroot-henry-cohen-1897",
+    "entry_id": "arrowroot-starch",
+    "title": "Cup of arrowroot recorded in 1897",
+    "formula_type": "cooked_food",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "1 dessertspoonful",
+        "item": "arrowroot"
+      },
+      {
+        "amount": "1 pint",
+        "item": "milk"
+      }
+    ],
+    "recorded_method": [
+      "A little of the measured cold milk was used to work the arrowroot into a smooth paste.",
+      "The remaining milk was boiled and poured onto the paste while it was stirred smooth.",
+      "If it had not thickened enough, it was returned to the saucepan and stirred over the heat for another 2 to 3 minutes."
+    ],
+    "source_fit": "Exact period preparation match, but not a direct source for the archived entry’s American cultural attribution. The source is a British Jewish cookbook and is cited only for the measured method.",
+    "archive_note": "The historical unit “dessertspoonful” is preserved exactly because period spoon measures were not fully standardized; no modern conversion has been guessed. Sugar or salt were optional and unmeasured in the source.",
+    "safety_notes": [
+      "Only pasteurized milk should be used; raw milk can carry harmful germs.",
+      "This preparation contains milk and is not suitable for anyone with a milk allergy.",
+      "It should not be used as infant formula or as a substitute for breast milk or commercial infant formula; cow's milk should not be introduced as a drink before 12 months.",
+      "If retained after cooking, it should be refrigerated within 2 hours and discarded after 3 to 4 days."
+    ],
+    "primary_source": {
+      "title": "The Economical Jewish Cook: A Modern Orthodox Recipe Book for Young Housekeepers, Third Edition",
+      "author": "May Henry and Edith B. Cohen",
+      "publication_year": 1897,
+      "page": "67",
+      "url": "https://www.gutenberg.org/files/54045/54045-h/54045-h.htm#Page_67"
+    },
+    "safety_sources": [
+      {
+        "title": "Raw Milk",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/food-safety/foods/raw-milk.html"
+      },
+      {
+        "title": "Food Safety and Eating Out",
+        "publisher": "FoodSafety.gov",
+        "url": "https://www.foodsafety.gov/blog/food-safety-and-eating-out"
+      },
+      {
+        "title": "Cow's Milk and Milk Alternatives",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html"
+      }
+    ],
+    "reviewed_on": "2026-09-17"
+  }
+]

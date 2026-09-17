@@ -47,6 +47,35 @@ export type PhotoCredit = {
   notes: string;
 };
 
+export type HistoricalFormula = {
+  id: string;
+  entry_id: string;
+  title: string;
+  formula_type: 'cooked_food' | 'beverage' | 'topical' | 'tincture' | 'other';
+  verification_status: 'verified_primary_source';
+  ingredients: {
+    amount: string;
+    item: string;
+  }[];
+  recorded_method: string[];
+  source_fit: string;
+  archive_note: string;
+  safety_notes: string[];
+  primary_source: {
+    title: string;
+    author: string;
+    publication_year: number;
+    page: string;
+    url: string;
+  };
+  safety_sources: {
+    title: string;
+    publisher: string;
+    url: string;
+  }[];
+  reviewed_on: string;
+};
+
 // Historical-use locations retained from the original archive. These are not
 // botanical ranges; the States tab uses the separately sourced USDA range data.
 export type StateCode = string;

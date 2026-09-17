@@ -10,6 +10,7 @@ The archive content works offline: all 942 entries and 773 photo files are bundl
 - **85 entries that could not be independently verified** (hidden from Browse by default, with a toggle to show them). Their cards, detail pages, and shared text now say so explicitly. Nineteen also carry a red do-not-use warning.
 - Safety cautions on 441 entries. The app presents the collection as a historical archive, not medical advice or treatment instructions.
 - **Complete photo ledger for all 773 bundled files:** 414 have a traced Wikimedia source/license; 359 legacy photos have no recoverable source in the supplied records and are retained with an explicit warning. Ten additional verified credit rows for currently unbundled files are preserved in the CSV archive.
+- **Safety-gated historical formulas:** the first 2 measured preparations are linked to primary historical sources and modern food-safety references. No formula is shown for a cautioned or known hazardous entry.
 - **Search** by name, ailment, or people
 - **Filter** by tradition (a proper picker, not a cramped chip row) and by region
 - **Traditions tab** — browse by community, with counts
@@ -43,6 +44,7 @@ To eventually publish it to the App Store / Play Store, this project connects to
 - `assets/plant-images/` — all 773 photo files, bundled into the app
 - `PHOTO_CREDITS.csv` — one provenance row for every bundled photo file, plus 10 preserved archival rows for currently unbundled files
 - `src/data/photo-credits.json` — the in-app photo-credit data
+- `src/data/historical-formulas.json` — measured historical formulas that passed the primary-source and safety gate
 - `src/components/EntryCard.tsx` — the card shown in the browse grid
 
 ## Status

@@ -7,10 +7,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Colors, Fonts, Spacing, type ThemeColors } from '@/constants/theme';
 import { entries } from '@/data/entries';
+import { getHistoricalFormula } from '@/data/historical-formulas';
 import { communityLabels, regionLabels } from '@/data/labels';
 import { plantImages } from '@/data/plant-images';
 import { photoCredits } from '@/data/photo-credits';
 import { getPlantStateRange } from '@/data/plant-state-ranges';
+import type { HistoricalFormula } from '@/types';
 
 export default function EntryDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -32,6 +34,7 @@ export default function EntryDetailScreen() {
   const image = entry.img ? plantImages[entry.img.value] : null;
   const photoCredit = entry.img ? photoCredits[entry.img.value] : undefined;
   const plantStateRange = getPlantStateRange(entry.id);
+  const historicalFormula = getHistoricalFormula(entry.id);
   const dangerous = !entry.confirmed && !!entry.caution;
 
   const onShare = () => {
@@ -127,6 +130,7 @@ export default function EntryDetailScreen() {
         <Field label="Tradition" value={entry.people} colors={colors} />
         <Field label="Used for" value={entry.use} colors={colors} />
         {entry.method ? <Field label="How it was made" value={entry.method} colors={colors} /> : null}
+        {historicalFormula ? <HistoricalFormulaBlock formula={historicalFormula} colors={colors} /> : null}
         {entry.caution ? (
           <View style={[styles.cautionBox, { borderColor: a.rust }]}>
             <Text style={[styles.cautionLabel, { color: a.rust }]}>CAUTION</Text>
@@ -152,6 +156,68 @@ export default function EntryDetailScreen() {
         </Pressable>
       </ScrollView>
     </SafeAreaView>
+  );
+}
+
+function HistoricalFormulaBlock({ formula, colors }: { formula: HistoricalFormula; colors: ThemeColors }) {
+  return (
+    <View style={[styles.formulaCard, { borderColor: colors.accent, backgroundColor: colors.backgroundElement }]}>
+      <Text selectable style={[styles.formulaEyebrow, { color: colors.accent }]}>DOCUMENTED HISTORICAL FORMULA</Text>
+      <Text selectable style={[styles.formulaTitle, { color: colors.text, fontFamily: Fonts?.serif }]}>{formula.title}</Text>
+      <Text selectable style={[styles.formulaDisclaimer, { color: colors.textSecondary }]}>
+        How this preparation was recorded in the cited period source. This is not a recommendation or treatment instruction.
+      </Text>
+
+      <Text selectable style={[styles.formulaSectionLabel, { color: colors.textSecondary }]}>MEASURED INGREDIENTS · PERIOD UNITS</Text>
+      <View style={styles.ingredientList}>
+        {formula.ingredients.map((ingredient) => (
+          <View key={`${ingredient.amount}-${ingredient.item}`} style={[styles.ingredientRow, { borderColor: colors.border }]}>
+            <Text selectable style={[styles.ingredientAmount, { color: colors.accent }]}>{ingredient.amount}</Text>
+            <Text selectable style={[styles.ingredientItem, { color: colors.text }]}>{ingredient.item}</Text>
+          </View>
+        ))}
+      </View>
+
+      <Text selectable style={[styles.formulaSectionLabel, { color: colors.textSecondary }]}>HOW THE SOURCE RECORDED IT</Text>
+      <View style={styles.formulaSteps}>
+        {formula.recorded_method.map((step, index) => (
+          <View key={step} style={styles.formulaStep}>
+            <View style={[styles.stepNumber, { backgroundColor: colors.accent }]}>
+              <Text selectable style={[styles.stepNumberText, { color: colors.accentText }]}>{index + 1}</Text>
+            </View>
+            <Text selectable style={[styles.formulaStepText, { color: colors.text }]}>{step}</Text>
+          </View>
+        ))}
+      </View>
+
+      <View style={[styles.sourceFitBox, { borderColor: colors.border }]}>
+        <Text selectable style={[styles.sourceFitLabel, { color: colors.textSecondary }]}>WHAT THE SOURCE VERIFIES</Text>
+        <Text selectable style={[styles.sourceFitText, { color: colors.text }]}>{formula.source_fit}</Text>
+        <Text selectable style={[styles.archiveNote, { color: colors.textSecondary }]}>{formula.archive_note}</Text>
+      </View>
+
+      <View style={[styles.formulaSafety, { borderColor: colors.ochre }]}>
+        <Text selectable style={[styles.formulaSafetyLabel, { color: colors.ochre }]}>MODERN SAFETY NOTES</Text>
+        {formula.safety_notes.map((note) => (
+          <Text selectable key={note} style={[styles.formulaSafetyText, { color: colors.text }]}>• {note}</Text>
+        ))}
+      </View>
+
+      <Text selectable style={[styles.formulaSectionLabel, { color: colors.textSecondary }]}>PRIMARY HISTORICAL SOURCE</Text>
+      <Text selectable style={[styles.sourceCitation, { color: colors.text }]}>
+        {formula.primary_source.author}. {formula.primary_source.title} ({formula.primary_source.publication_year}), p. {formula.primary_source.page}.
+      </Text>
+      <Pressable accessibilityRole="link" onPress={() => void Linking.openURL(formula.primary_source.url)}>
+        <Text selectable style={[styles.formulaLink, { color: colors.accent }]}>Open the digitized historical source</Text>
+      </Pressable>
+
+      <Text selectable style={[styles.formulaSectionLabel, { color: colors.textSecondary }]}>MODERN SAFETY SOURCES</Text>
+      {formula.safety_sources.map((source) => (
+        <Pressable key={source.url} accessibilityRole="link" onPress={() => void Linking.openURL(source.url)}>
+          <Text selectable style={[styles.formulaLink, { color: colors.accent }]}>{source.publisher}: {source.title}</Text>
+        </Pressable>
+      ))}
+    </View>
   );
 }
 
@@ -272,6 +338,41 @@ const styles = StyleSheet.create({
   cautionBox: { borderWidth: 1, borderRadius: 8, padding: 12, marginTop: 16 },
   cautionLabel: { fontSize: 11, fontWeight: '700', letterSpacing: 1, marginBottom: 4 },
   caution: { fontSize: 13.5, lineHeight: 19 },
+  formulaCard: {
+    borderWidth: 1,
+    borderRadius: 14,
+    padding: 16,
+    marginTop: 18,
+    gap: 8,
+  },
+  formulaEyebrow: { fontSize: 10, fontWeight: '800', letterSpacing: 1.1 },
+  formulaTitle: { fontSize: 21, lineHeight: 27, fontWeight: '700' },
+  formulaDisclaimer: { fontSize: 12.5, lineHeight: 18 },
+  formulaSectionLabel: { fontSize: 10, fontWeight: '700', letterSpacing: 0.9, marginTop: 8 },
+  ingredientList: { gap: 0 },
+  ingredientRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 10,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    paddingVertical: 7,
+  },
+  ingredientAmount: { width: 112, fontSize: 13, lineHeight: 18, fontWeight: '700' },
+  ingredientItem: { flex: 1, fontSize: 14, lineHeight: 20 },
+  formulaSteps: { gap: 10 },
+  formulaStep: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
+  stepNumber: { width: 22, height: 22, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
+  stepNumberText: { fontSize: 11, fontWeight: '800', fontVariant: ['tabular-nums'] },
+  formulaStepText: { flex: 1, fontSize: 14, lineHeight: 20 },
+  sourceFitBox: { borderTopWidth: StyleSheet.hairlineWidth, paddingTop: 10, gap: 4 },
+  sourceFitLabel: { fontSize: 10, fontWeight: '700', letterSpacing: 0.9 },
+  sourceFitText: { fontSize: 12.5, lineHeight: 18 },
+  archiveNote: { fontSize: 11.5, lineHeight: 17, fontStyle: 'italic' },
+  formulaSafety: { borderWidth: 1, borderRadius: 9, padding: 11, gap: 5 },
+  formulaSafetyLabel: { fontSize: 10, fontWeight: '800', letterSpacing: 0.9 },
+  formulaSafetyText: { fontSize: 12.5, lineHeight: 18 },
+  sourceCitation: { fontSize: 12.5, lineHeight: 18 },
+  formulaLink: { fontSize: 12.5, lineHeight: 18, fontWeight: '700' },
   archiveNotice: { borderWidth: 1, borderRadius: 8, padding: 12, marginTop: 16 },
   archiveNoticeLabel: { fontSize: 10, fontWeight: '700', letterSpacing: 1, marginBottom: 4 },
   archiveNoticeText: { fontSize: 12.5, lineHeight: 18 },
