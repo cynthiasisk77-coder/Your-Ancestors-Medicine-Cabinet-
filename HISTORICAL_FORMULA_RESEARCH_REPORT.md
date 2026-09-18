@@ -1,10 +1,10 @@
 # Historical Formula Research Report
 
-Reviewed: September 17, 2026
+Reviewed: September 18, 2026
 
 ## Final screened release
 
-The archive contains 942 entries. The app now publishes 6 formulas with measured quantities, complete preparation methods, a primary historical source, a scope limitation, and current safety references.
+The archive contains 942 entries. The app now publishes 8 formulas with measured quantities, complete preparation methods, a primary historical source, a scope limitation, and current safety references.
 
 | Entry | Historical source | Verified result |
 | --- | --- | --- |
@@ -14,14 +14,16 @@ The archive contains 942 entries. The app now publishes 6 formulas with measured
 | Beef Tea (Bone Broth) | Boland, *A Handbook of Invalid Cooking* (1893), pp. 78–79 | Exact cooked beef-broth formula; raw and acidified beef-tea variants excluded |
 | Chicken Soup | Thomas J. Murrey, *Fifty Soups*, 8th ed. (1884), p. 17 | Measured American chicken-broth formula; not a source for the entry’s Ashkenazi narrative |
 | Flaxseed Mucilage Drink | Boland, *A Handbook of Invalid Cooking* (1893), pp. 105–106 | Complete flaxseed-and-lemon formula; not a source for the entry’s Polish attribution or medical effectiveness |
+| Whey | Eliza A. Pitkin and Julia A. Pye, *Invalid Cookery* (1880), p. 69 | Exact nonalcoholic lemon-whey formula; pasteurized milk replaces the source’s “new milk” |
+| Carrageenan Seaweed | Pitkin and Pye, *Invalid Cookery* (1880), p. 94 | Exact Irish moss blanc-mange formula; not evidence for respiratory or convalescence claims |
 
-The remaining 936 entries do not display a measured formula. The audit records why:
+The remaining 934 entries do not display a measured formula. The audit records why:
 
 | Disposition | Entries | Meaning |
 | --- | ---: | --- |
-| Published, primary-source formula | 6 | Passed every publication and safety gate |
+| Published, primary-source formula | 8 | Passed every publication and safety gate |
 | Excluded because the archive entry carries a caution | 441 | No actionable measured formula is published |
-| No safe, measured primary-source formula published | 495 | No estimate, near-match, or incomplete recipe was substituted |
+| No safe, measured primary-source formula published | 493 | No estimate, near-match, or incomplete recipe was substituted |
 
 ## Publication gate
 
@@ -39,7 +41,7 @@ A disclaimer is not used to excuse an unsafe formula. Hazardous preparations rem
 ## Deliberate exclusions
 
 - Raw or inadequately heated meat preparations were excluded.
-- Alcohol-containing whey formulas were excluded from this release.
+- Alcohol-containing whey formulas remain excluded; the published whey formula uses measured lemon juice and no alcohol.
 - Calf’s-foot jelly was excluded because the period source calls for raw egg whites and shells, and a safe modernization would no longer be the exact historical formula.
 - Caraway soup was excluded because the located period formula depends on a second dumpling recipe with an unmeasured milk quantity.
 - Herbal teas, tinctures, concentrated extracts, medicinal dosing, and any formula linked to a cautioned entry remain unpublished unless their exact source and modern safety profile can pass the same gate.
@@ -53,6 +55,8 @@ A disclaimer is not used to excuse an unsafe formula. Hazardous preparations rem
 - [Mary A. Boland, *A Handbook of Invalid Cooking* (1893), Rice-Water, p. 102](https://www.gutenberg.org/files/54568/54568-h/54568-h.htm#Page_102)
 - [Mary A. Boland, *A Handbook of Invalid Cooking* (1893), Flaxseed Tea with Lemon, pp. 105–106](https://www.gutenberg.org/files/54568/54568-h/54568-h.htm#Page_105)
 - [Thomas J. Murrey, *Fifty Soups*, 8th ed. (1884), Chicken Broth for the Invalid, p. 17](https://www.gutenberg.org/files/25007/25007-h/25007-h.htm#Page_17)
+- [Eliza A. Pitkin and Julia A. Pye, *Invalid Cookery* (1880), Lemon Whey, p. 69](https://archive.org/details/63841060R.nlm.nih.gov/page/n70/mode/1up)
+- [Pitkin and Pye, *Invalid Cookery* (1880), Irish Moss Blanc-Mange, p. 94](https://archive.org/details/63841060R.nlm.nih.gov/page/n95/mode/1up)
 
 ## Modern safety sources
 
@@ -65,6 +69,8 @@ A disclaimer is not used to excuse an unsafe formula. Hazardous preparations rem
 - [USDA FSIS: Chicken from Farm to Table](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/poultry/chicken-farm-table)
 - [FoodSafety.gov: Food Safety and Eating Out](https://www.foodsafety.gov/blog/food-safety-and-eating-out)
 - [NCCIH: Flaxseed and Flaxseed Oil—Usefulness and Safety](https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil)
+- [FDA: Food Allergies](https://www.fda.gov/food/food-labeling-nutrition/food-allergies)
+- [NIH Office of Dietary Supplements: Iodine—Fact Sheet for Health Professionals](https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/)
 
 ## Verification commands
 

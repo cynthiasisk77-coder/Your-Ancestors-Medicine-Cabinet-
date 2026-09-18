@@ -284,8 +284,8 @@ function PhotoCreditBlock({
 
 function Field({ label, value, colors }: { label: string; value: string; colors: ThemeColors }) {
   return (
-    <View style={styles.field}>
-      <Text style={[styles.fieldLabel, { color: colors.textSecondary }]}>{label}</Text>
+    <View style={[styles.field, { borderColor: colors.accent, backgroundColor: colors.backgroundElement }]}>
+      <Text style={[styles.fieldLabel, { color: colors.accent }]}>{label}</Text>
       <Text style={[styles.fieldValue, { color: colors.text }]}>{value}</Text>
     </View>
   );
@@ -365,8 +365,15 @@ const styles = StyleSheet.create({
   sourceStatus: { borderWidth: 1, borderRadius: 8, padding: 11, marginTop: 8, marginBottom: 2, gap: 4 },
   sourceStatusLabel: { fontSize: 9.5, fontWeight: '700', letterSpacing: 0.8 },
   sourceStatusText: { fontSize: 11.5, lineHeight: 17, fontWeight: '600' },
-  field: { marginTop: 14 },
-  fieldLabel: { fontSize: 11, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 3 },
+  field: {
+    borderWidth: 1,
+    borderLeftWidth: 4,
+    borderRadius: 10,
+    padding: 12,
+    marginTop: 10,
+    gap: 4,
+  },
+  fieldLabel: { fontSize: 11, fontWeight: '800', textTransform: 'uppercase', letterSpacing: 1 },
   fieldValue: { fontSize: 15, lineHeight: 21 },
   storyCard: {
     borderWidth: 1,

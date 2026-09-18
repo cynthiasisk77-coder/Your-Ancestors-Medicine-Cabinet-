@@ -1,6 +1,6 @@
 # Remedy Cabinet Photo and Data Audit
 
-Audit date: 2026-09-17
+Audit date: 2026-09-18
 
 ## Outcome
 
@@ -33,7 +33,8 @@ Every archive record now has an explicit disposition in `CONTENT_AUDIT.json` for
 - Added explicit warnings for legacy photos whose source, creator, and license could not be independently verified.
 - Changed all 85 unverified entry labels and shared text to say that the information could not be independently verified. Nineteen of those entries also retain a do-not-use warning.
 - Added a historical-archive notice stating that the records are not medical advice or treatment instructions.
-- Added a visible archive-source status to every entry. Six entries now link to measured primary-source formulas; 851 supplied-confirmed records without a record-level citation are explicitly labeled as not reproducible claim by claim; all 85 supplied-unconfirmed records remain explicitly unverified.
+- Added a visible archive-source status to every entry. Eight entries now link to measured primary-source formulas; 849 supplied-confirmed records without a record-level citation are explicitly labeled as not reproducible claim by claim; all 85 supplied-unconfirmed records remain explicitly unverified.
+- Added measured, primary-source formulas for nonalcoholic lemon whey and Irish moss blanc-mange from Eliza A. Pitkin and Julia A. Pye’s 1880 *Invalid Cookery*, with modern pasteurization, allergy, infant-feeding, and iodine cautions.
 - Added `CONTENT_AUDIT.json`, with one checked disposition for every one of the 942 entries, and a validator that fails if any entry, image, credit, range, or formula falls out of sync.
 - Updated outdated README totals and removed the prior unsupported claim that a current release build had passed.
 - Fixed every tab-to-Browse route to use the SDK 57 URL (`/`) rather than the invisible `/(tabs)` route-group name.
@@ -122,16 +123,16 @@ These entries were left blank rather than filled with a misleading or unlicensed
 | State code validation | Pass: 0 invalid codes |
 | Independent USDA range sample | Pass: 10 of 10 generated records exactly matched a fresh state-layer query |
 | Complete content ledger | Pass: 942 records, 942 unique dispositions |
-| Historical formula safety gate | Pass: 6 measured formulas; 441 cautioned entries excluded |
+| Historical formula safety gate | Pass: 8 measured formulas; 441 cautioned entries excluded |
 
 Fifty-six readable source images are below the preferred 640-pixel long edge. They were not artificially upscaled because that would add no real detail.
 
 `npm run lint` could not complete because Expo attempted to install/configure lint dependencies and the network proxy timed out. It made no project-file changes. TypeScript and Expo configuration checks both passed.
 
-No EAS/store build was started. The release configuration is present and passes Expo Doctor and production-export checks, but `eas whoami` reports that this workspace is not logged in. Expo authentication is the remaining external requirement; no build quota was consumed.
+An Android preview APK was completed on September 18, 2026 from commit `0034bc2`. The interface and formula changes documented in this revision require a new build before they appear in that APK.
 
 ## Verification limit
 
-The supplied archive still does not include record-level historical citations for most narratives. Six measured formulas now have primary-source citations, but each citation verifies only the formula and the limited scope stated in its Source Fit note. The other 851 supplied-confirmed narratives cannot be independently reproduced claim by claim from the available project files; the app and audit ledger now say so directly instead of treating the supplied flag as proof.
+The supplied archive still does not include record-level historical citations for most narratives. Eight measured formulas now have primary-source citations, but each citation verifies only the formula and the limited scope stated in its Source Fit note. The other 849 supplied-confirmed narratives cannot be independently reproduced claim by claim from the available project files; the app and audit ledger now say so directly instead of treating the supplied flag as proof.
 
 The 85 entries already marked unconfirmed continue to state clearly that they could not be independently verified. Existing content was retained rather than silently rewritten or deleted.

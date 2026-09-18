@@ -85,7 +85,7 @@ const summary = {
 
 const audit = {
   metadata: {
-    reviewed_on: '2026-09-17',
+    reviewed_on: '2026-09-18',
     scope:
       'One disposition per archive entry for record sourcing, photo provenance, USDA botanical range, measured-formula publication, and caution presence.',
     verification_limit:

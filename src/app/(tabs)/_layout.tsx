@@ -47,7 +47,7 @@ export default function TabLayout() {
   );
 
   const HeaderTitle = ({ label, tagline }: { label: string; tagline?: string }) => (
-    <View style={{ alignItems: 'center', maxWidth: '100%' }}>
+    <View style={{ alignItems: 'center', maxWidth: '100%', transform: [{ translateY: -5 }] }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, maxWidth: '100%' }}>
         <Text style={{ fontSize: 13, opacity: 0.6 }}>🌿</Text>
         <Text
@@ -71,8 +71,10 @@ export default function TabLayout() {
             fontFamily: Fonts?.serif,
             fontStyle: 'italic',
             fontSize: 11,
+            lineHeight: 13,
             color: colors.textSecondary,
-            marginTop: 1,
+            marginTop: 0,
+            includeFontPadding: false,
           }}
           numberOfLines={1}>
           {tagline}

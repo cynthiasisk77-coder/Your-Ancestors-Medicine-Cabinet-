@@ -328,5 +328,134 @@
       }
     ],
     "reviewed_on": "2026-09-17"
+  },
+  {
+    "id": "lemon-whey-pitkin-pye-1880",
+    "entry_id": "whey",
+    "title": "Lemon whey recorded in 1880",
+    "formula_type": "beverage",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "1 tablespoon",
+        "item": "lemon juice"
+      },
+      {
+        "amount": "1 pint",
+        "item": "pasteurized milk, brought to a boil (modern substitute for the source’s “new milk”)"
+      },
+      {
+        "amount": "1 teaspoon",
+        "item": "sugar"
+      }
+    ],
+    "recorded_method": [
+      "The measured lemon juice was stirred into the measured boiling-hot milk.",
+      "The mixture was simmered very gently until the whey separated from the curd.",
+      "The clear whey was strained from the curd and sweetened with the measured sugar.",
+      "The source recorded a total preparation time of about 10 minutes."
+    ],
+    "source_fit": "Direct American period match for the archived entry’s strained, acid-curdled whey drink. It verifies the measured preparation, not the entry’s fever claim, Shakespeare reference, or medical effectiveness.",
+    "archive_note": "The source called for “new milk,” which in 1880 could mean fresh unpasteurized milk. The measured formula is preserved, but pasteurized milk is specified here as a modern food-safety substitution. The same source printed wine and vinegar variants; the nonalcoholic lemon formula was selected.",
+    "safety_notes": [
+      "Only pasteurized milk should be used; raw milk can carry harmful germs.",
+      "This preparation contains milk and is not suitable for anyone with a milk allergy.",
+      "It should not be used as infant formula or as a substitute for breast milk or commercial infant formula.",
+      "If retained after preparation, it should be refrigerated within 2 hours and discarded after 3 to 4 days."
+    ],
+    "primary_source": {
+      "title": "Invalid Cookery: A Manual of Recipes for the Preparation of Food for the Sick and Convalescent",
+      "author": "Eliza A. Pitkin and Julia A. Pye",
+      "publication_year": 1880,
+      "page": "69",
+      "url": "https://archive.org/details/63841060R.nlm.nih.gov/page/n70/mode/1up"
+    },
+    "safety_sources": [
+      {
+        "title": "Raw Milk",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/food-safety/foods/raw-milk.html"
+      },
+      {
+        "title": "Food Allergies",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/food-labeling-nutrition/food-allergies"
+      },
+      {
+        "title": "About Infant and Toddler Nutrition",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/infant-toddler-nutrition/about/index.html"
+      },
+      {
+        "title": "Food Safety and Eating Out",
+        "publisher": "FoodSafety.gov",
+        "url": "https://www.foodsafety.gov/blog/food-safety-and-eating-out"
+      }
+    ],
+    "reviewed_on": "2026-09-18"
+  },
+  {
+    "id": "irish-moss-blanc-mange-pitkin-pye-1880",
+    "entry_id": "carrageenan-seaweed",
+    "title": "Irish moss blanc-mange recorded in 1880",
+    "formula_type": "cooked_food",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "1/4 pint",
+        "item": "washed, food-grade Irish moss"
+      },
+      {
+        "amount": "1 quart",
+        "item": "pasteurized milk, brought to a boil (modern substitute for the source’s “new milk”)"
+      },
+      {
+        "amount": "4 teaspoons",
+        "item": "sugar"
+      },
+      {
+        "amount": "6 drops",
+        "item": "vanilla essence"
+      }
+    ],
+    "recorded_method": [
+      "The Irish moss was washed, soaked in a little cold water for 5 minutes, and removed from the soaking water.",
+      "It was added to the measured boiling-hot milk and simmered until the liquid had approximately the consistency of cream.",
+      "The measured sugar and vanilla were added, and the mixture was strained through a wire sieve into a mould to cool.",
+      "Once cold, the blanc-mange was turned out onto a dish; the source recorded a total preparation time of about 45 minutes."
+    ],
+    "source_fit": "Direct American period match for the archived entry’s Irish-moss-and-milk preparation. It verifies a measured historical food formula, not the entry’s cough or convalescence claims or medical effectiveness.",
+    "archive_note": "The source called for “new milk,” so pasteurized milk is specified as a modern food-safety substitution. It also suggested additional cream and sugar for serving without quantities; those optional additions are not included in the measured list.",
+    "safety_notes": [
+      "Use only commercially sold food-grade Irish moss, not unidentified or roadside-harvested seaweed.",
+      "Seaweed can contain substantial and variable iodine. People with thyroid disease, those who are pregnant or breastfeeding, and people taking thyroid or iodine-related medicines should ask a qualified clinician before consuming concentrated seaweed preparations.",
+      "Only pasteurized milk should be used, and the preparation is not suitable for anyone with a milk allergy.",
+      "This is a historical food record, not a treatment for cough, lung disease, or recovery from illness."
+    ],
+    "primary_source": {
+      "title": "Invalid Cookery: A Manual of Recipes for the Preparation of Food for the Sick and Convalescent",
+      "author": "Eliza A. Pitkin and Julia A. Pye",
+      "publication_year": 1880,
+      "page": "94",
+      "url": "https://archive.org/details/63841060R.nlm.nih.gov/page/n95/mode/1up"
+    },
+    "safety_sources": [
+      {
+        "title": "Iodine: Fact Sheet for Health Professionals",
+        "publisher": "National Institutes of Health Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/"
+      },
+      {
+        "title": "Raw Milk",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/food-safety/foods/raw-milk.html"
+      },
+      {
+        "title": "Food Allergies",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/food-labeling-nutrition/food-allergies"
+      }
+    ],
+    "reviewed_on": "2026-09-18"
   }
 ]
