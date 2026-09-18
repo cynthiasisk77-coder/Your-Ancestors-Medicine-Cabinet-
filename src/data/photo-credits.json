@@ -2927,6 +2927,18 @@
     "verification_status": "verified_from_wikimedia_manifest",
     "notes": ""
   },
+  "dulse-pacific.jpg": {
+    "filename": "dulse-pacific.jpg",
+    "label": "Pacific dulse",
+    "license": "Could not be independently verified",
+    "license_url": "",
+    "creator": "Ryan Hodnett / Wikimedia",
+    "credit": "Image presented by StoryMD as Palmaria mollis (ribbon seaweed, dulse)",
+    "source_page": "https://storymd.com/journal/jar29axt4m-seaweed/page/z387r7sq67k2-palmaria-mollis-ribbon-seaweed-dulse",
+    "original_url": "https://cdn.storymd.com/optimized/kqrWjkrtZA/thumbnail.jpg",
+    "verification_status": "unverified_source_retained",
+    "notes": "The subject and credited creator were identified, but the image license could not be independently verified. Retained and clearly marked at the owner's direction."
+  },
   "dutchmans-breeches.jpg": {
     "filename": "dutchmans-breeches.jpg",
     "label": "Dutchman's breeches",

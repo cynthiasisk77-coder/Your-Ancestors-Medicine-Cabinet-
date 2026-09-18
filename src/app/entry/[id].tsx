@@ -47,6 +47,9 @@ export default function EntryDetailScreen() {
       entry.note ? `\n${entry.note}` : null,
       entry.caution ? `\nCAUTION: ${entry.caution}` : null,
       !entry.confirmed ? '\nVerification: Could not be independently verified.' : null,
+      historicalFormula
+        ? '\nSource status: The measured formula has a cited primary source; that source does not automatically verify every broader archive claim.'
+        : '\nSource status: A record-level historical citation was not available in the project files for independent review.',
       '',
       'From The Forgotten Remedy Cabinet — a historical archive of American folk medicine.',
     ].filter(Boolean);
@@ -64,7 +67,17 @@ export default function EntryDetailScreen() {
               <Text style={styles.zoomHintText}>Tap to view full-screen</Text>
             </View>
           </Pressable>
-        ) : null}
+        ) : (
+          <View style={[styles.noPhoto, { borderColor: colors.border, backgroundColor: colors.backgroundElement }]}>
+            <Text style={[styles.noPhotoGlyph, { color: colors.accent }]}>❦</Text>
+            <View style={styles.noPhotoCopy}>
+              <Text style={[styles.noPhotoLabel, { color: colors.textSecondary }]}>NO VERIFIED IMAGE AVAILABLE</Text>
+              <Text style={[styles.noPhotoText, { color: colors.text }]}>
+                An accurate, reusable image could not be independently verified for this record. No substitute image was used.
+              </Text>
+            </View>
+          </View>
+        )}
 
         {image ? (
           <PhotoCreditBlock
@@ -119,6 +132,17 @@ export default function EntryDetailScreen() {
             <Text style={[styles.rangeUnverified, { color: colors.ochre }]}>A state-level USDA range could not be independently verified for this record, so it is not included in state search results.</Text>
           </View>
         ) : null}
+
+        <View style={[styles.sourceStatus, { borderColor: colors.border, backgroundColor: colors.backgroundElement }]}>
+          <Text selectable style={[styles.sourceStatusLabel, { color: colors.textSecondary }]}>ARCHIVE SOURCE STATUS</Text>
+          <Text selectable style={[styles.sourceStatusText, { color: historicalFormula ? colors.accent : colors.ochre }]}>
+            {historicalFormula
+              ? 'A measured historical formula is supported by the cited period source below. That citation verifies the formula only; its Source Fit note explains which broader claims remain unverified.'
+              : entry.confirmed
+                ? 'A record-level historical citation was not present in the available project files, so the narrative could not be independently reproduced claim by claim. It is retained as an archive lead, not proof of safety or effectiveness.'
+                : 'This record could not be independently verified from the available project materials. It is retained at the owner’s direction and is not evidence of safety or effectiveness.'}
+          </Text>
+        </View>
 
         {entry.note ? (
           <View style={[styles.storyCard, { backgroundColor: colors.backgroundElement, borderColor: colors.accent }]}>
@@ -271,6 +295,21 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   scroll: { padding: Spacing.three, paddingBottom: 48, gap: 4 },
   image: { width: '100%', aspectRatio: 4 / 3, borderRadius: 10, marginBottom: 8 },
+  noPhoto: {
+    width: '100%',
+    aspectRatio: 4 / 3,
+    borderWidth: 1,
+    borderRadius: 10,
+    marginBottom: 8,
+    padding: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 12,
+  },
+  noPhotoGlyph: { fontSize: 34 },
+  noPhotoCopy: { maxWidth: 300, gap: 6, alignItems: 'center' },
+  noPhotoLabel: { fontSize: 11, fontWeight: '800', letterSpacing: 1.1, textAlign: 'center' },
+  noPhotoText: { fontSize: 13, lineHeight: 19, textAlign: 'center' },
   zoomHint: {
     position: 'absolute',
     bottom: 16,
@@ -323,6 +362,9 @@ const styles = StyleSheet.create({
   rangeSourceText: { fontSize: 11.5, lineHeight: 16 },
   rangeSourceLink: { fontSize: 11.5, fontWeight: '600', marginTop: 3 },
   rangeUnverified: { fontSize: 11.5, lineHeight: 16, fontWeight: '600' },
+  sourceStatus: { borderWidth: 1, borderRadius: 8, padding: 11, marginTop: 8, marginBottom: 2, gap: 4 },
+  sourceStatusLabel: { fontSize: 9.5, fontWeight: '700', letterSpacing: 0.8 },
+  sourceStatusText: { fontSize: 11.5, lineHeight: 17, fontWeight: '600' },
   field: { marginTop: 14 },
   fieldLabel: { fontSize: 11, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 3 },
   fieldValue: { fontSize: 15, lineHeight: 21 },

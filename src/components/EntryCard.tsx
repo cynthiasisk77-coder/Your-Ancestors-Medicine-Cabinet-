@@ -26,6 +26,7 @@ export function EntryCard({ entry, width }: { entry: Entry; width: number }) {
         ) : (
           <View style={[styles.image, styles.imagePlaceholder, { backgroundColor: c.backgroundSelected }]}>
             <Text style={styles.imagePlaceholderGlyph}>🌿</Text>
+            <Text style={[styles.imagePlaceholderText, { color: c.textSecondary }]}>NO VERIFIED IMAGE</Text>
           </View>
         )}
         {!entry.confirmed && (
@@ -78,8 +79,9 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginBottom: 4,
   },
-  imagePlaceholder: { alignItems: 'center', justifyContent: 'center' },
-  imagePlaceholderGlyph: { fontSize: 28, opacity: 0.5 },
+  imagePlaceholder: { alignItems: 'center', justifyContent: 'center', gap: 5 },
+  imagePlaceholderGlyph: { fontSize: 25, opacity: 0.45 },
+  imagePlaceholderText: { fontSize: 9.5, fontWeight: '700', letterSpacing: 0.7, textAlign: 'center' },
   badge: {
     alignSelf: 'flex-start',
     borderWidth: 1,

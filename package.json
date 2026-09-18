@@ -39,6 +39,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
+    "audit:build": "node ./scripts/build-content-audit.mjs",
+    "validate:content": "node ./scripts/validate-content-audit.mjs",
     "validate:formulas": "node ./scripts/validate-historical-formulas.mjs"
   },
   "private": true

@@ -108,5 +108,225 @@
       }
     ],
     "reviewed_on": "2026-09-17"
+  },
+  {
+    "id": "rice-water-boland-1893",
+    "entry_id": "rice-water",
+    "title": "Rice-water recorded in 1893",
+    "formula_type": "beverage",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "2 tablespoons",
+        "item": "rice"
+      },
+      {
+        "amount": "1 quart",
+        "item": "boiling water"
+      },
+      {
+        "amount": "1 saltspoon",
+        "item": "salt"
+      }
+    ],
+    "recorded_method": [
+      "The rice was picked over and washed.",
+      "It was put into a saucepan with the measured boiling water and simmered for 2 hours, until the rice was softened and partly dissolved.",
+      "The liquid was strained through a fine wire strainer into a bowl or pitcher.",
+      "The measured salt was added, and the rice-water was served warm or cold."
+    ],
+    "source_fit": "Exact period match for a measured rice-water preparation in an American nursing handbook. It does not independently verify the archived entry’s Gullah or Lowcountry attribution, nor does it establish treatment effectiveness.",
+    "archive_note": "The source suggested fortified wine as an optional addition in some circumstances. That optional alcohol was omitted from this archive formula and is not needed to reproduce the base rice-water recipe.",
+    "safety_notes": [
+      "Rice-water is not an oral rehydration solution: it does not contain the verified glucose-and-electrolyte balance used to replace losses from diarrhea.",
+      "Children with diarrhea should be discussed with a health professional; infants should continue breast milk or formula as advised by their clinician.",
+      "This historical food preparation is not infant formula and is not a treatment for dehydration or diarrhea.",
+      "If retained after cooking, it should be refrigerated within 2 hours and discarded after 3 to 4 days."
+    ],
+    "primary_source": {
+      "title": "A Handbook of Invalid Cooking",
+      "author": "Mary A. Boland",
+      "publication_year": 1893,
+      "page": "102",
+      "url": "https://www.gutenberg.org/files/54568/54568-h/54568-h.htm#Page_102"
+    },
+    "safety_sources": [
+      {
+        "title": "Treatment of Diarrhea",
+        "publisher": "National Institute of Diabetes and Digestive and Kidney Diseases",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/treatment"
+      },
+      {
+        "title": "About Infant and Toddler Nutrition",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://www.cdc.gov/infant-toddler-nutrition/about/index.html"
+      },
+      {
+        "title": "Food Safety and Eating Out",
+        "publisher": "FoodSafety.gov",
+        "url": "https://www.foodsafety.gov/blog/food-safety-and-eating-out"
+      }
+    ],
+    "reviewed_on": "2026-09-17"
+  },
+  {
+    "id": "beef-broth-boland-1893",
+    "entry_id": "beef-tea-bone-broth",
+    "title": "Beef broth recorded in 1893",
+    "formula_type": "cooked_food",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "1 pound",
+        "item": "beef, or beef and bone"
+      },
+      {
+        "amount": "1 quart",
+        "item": "cold water"
+      }
+    ],
+    "recorded_method": [
+      "The meat was cleaned and divided into half-inch pieces to expose more surface to the water.",
+      "It was placed in a granite-ware kettle with the measured cold water and cooked at a low temperature for 2 hours.",
+      "The broth was then boiled for 2 hours.",
+      "It was strained through a coarse wire strainer and the fat was skimmed from the surface."
+    ],
+    "source_fit": "Direct period match for the archived entry’s cooked beef-broth method. The source documents an American nursing-food formula; it does not validate modern “bone broth” claims or prove medical effectiveness.",
+    "archive_note": "Salt and pepper were specified only as seasoning, without measurements, so they are not listed as measured ingredients. The source’s separate raw and acidified beef-tea methods were excluded.",
+    "safety_notes": [
+      "Raw beef should be kept separate from ready-to-eat foods, and hands, utensils, and surfaces should be cleaned after handling it.",
+      "A food thermometer should be used to verify that meat reaches a safe minimum internal temperature; the historical cooking time alone is not a modern safety check.",
+      "If retained after cooking, broth should be refrigerated within 2 hours and discarded after 3 to 4 days.",
+      "This is a food-history record, not a medical treatment or a nutritionally complete diet."
+    ],
+    "primary_source": {
+      "title": "A Handbook of Invalid Cooking",
+      "author": "Mary A. Boland",
+      "publication_year": 1893,
+      "page": "78–79",
+      "url": "https://www.gutenberg.org/files/54568/54568-h/54568-h.htm#Page_78"
+    },
+    "safety_sources": [
+      {
+        "title": "Safe Minimum Internal Temperature Chart",
+        "publisher": "USDA Food Safety and Inspection Service",
+        "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart"
+      },
+      {
+        "title": "Food Safety and Eating Out",
+        "publisher": "FoodSafety.gov",
+        "url": "https://www.foodsafety.gov/blog/food-safety-and-eating-out"
+      }
+    ],
+    "reviewed_on": "2026-09-17"
+  },
+  {
+    "id": "chicken-broth-murrey-1884",
+    "entry_id": "chicken-soup",
+    "title": "Chicken broth recorded in 1884",
+    "formula_type": "cooked_food",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "1/2",
+        "item": "roasting chicken"
+      },
+      {
+        "amount": "1 quart",
+        "item": "cold water"
+      },
+      {
+        "amount": "1 leaf",
+        "item": "celery"
+      }
+    ],
+    "recorded_method": [
+      "Half of the chicken was chopped into pieces and placed in a small saucepan.",
+      "The measured cold water and celery leaf were added, and the mixture was simmered gently for 2 hours.",
+      "Oily particles were removed thoroughly and the broth was strained into a bowl.",
+      "The source recorded serving the broth after it had cooled slightly, with the cooked meat alongside it."
+    ],
+    "source_fit": "A measured American period formula for chicken broth served to a convalescent. It does not independently verify the archived entry’s Ashkenazi attribution, Maimonides narrative, vegetable list, or medical effectiveness.",
+    "archive_note": "The source called for “a little salt” without a measurement, so salt is not listed as a measured ingredient. The period description “dry-picked Philadelphia roasting chicken” is preserved in the citation context but not treated as a required modern product.",
+    "safety_notes": [
+      "Chicken should reach a safe minimum internal temperature of 165°F, verified with a food thermometer.",
+      "Raw poultry should be kept separate from ready-to-eat foods, and hands, utensils, and surfaces should be cleaned after handling it.",
+      "If retained after cooking, broth should be refrigerated within 2 hours and discarded after 3 to 4 days.",
+      "Chicken broth may be food, but this historical formula is not medical treatment and should not replace needed clinical care."
+    ],
+    "primary_source": {
+      "title": "Fifty Soups, Eighth Edition",
+      "author": "Thomas J. Murrey",
+      "publication_year": 1884,
+      "page": "17",
+      "url": "https://www.gutenberg.org/files/25007/25007-h/25007-h.htm#Page_17"
+    },
+    "safety_sources": [
+      {
+        "title": "Chicken from Farm to Table",
+        "publisher": "USDA Food Safety and Inspection Service",
+        "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/poultry/chicken-farm-table"
+      },
+      {
+        "title": "Food Safety and Eating Out",
+        "publisher": "FoodSafety.gov",
+        "url": "https://www.foodsafety.gov/blog/food-safety-and-eating-out"
+      }
+    ],
+    "reviewed_on": "2026-09-17"
+  },
+  {
+    "id": "flaxseed-tea-boland-1893",
+    "entry_id": "flaxseed-mucilage-drink-kisiel-z-siemienia-lnianego",
+    "title": "Flaxseed tea with lemon recorded in 1893",
+    "formula_type": "beverage",
+    "verification_status": "verified_primary_source",
+    "ingredients": [
+      {
+        "amount": "1 tablespoon",
+        "item": "flaxseed"
+      },
+      {
+        "amount": "1 pint",
+        "item": "water"
+      },
+      {
+        "amount": "1 tablespoon",
+        "item": "sugar"
+      },
+      {
+        "amount": "1 lemon",
+        "item": "juice"
+      }
+    ],
+    "recorded_method": [
+      "The flaxseed was examined and any stray dark grains were removed.",
+      "The measured flaxseed was boiled in the measured water for 1 hour.",
+      "The liquid was strained, then the measured lemon juice and sugar were added.",
+      "The source recorded serving the preparation either warm or cold."
+    ],
+    "source_fit": "A complete measured American period formula for a flaxseed mucilage drink. It supports the general preparation method but does not independently verify the archived entry’s Polish attribution, its honey variation, or treatment effectiveness.",
+    "archive_note": "The period source called this “Flaxseed Tea with Lemon.” Its respiratory claims are preserved only as historical context and are not presented as evidence that the drink treats croup or lung disease.",
+    "safety_notes": [
+      "Only ripe, food-grade flaxseed should be used; raw or unripe flaxseed may contain potentially toxic compounds.",
+      "Flaxseed can cause bloating, fullness, or diarrhea, and it may interact with medicines, including anticoagulant or antiplatelet drugs.",
+      "Flaxseed should be avoided during pregnancy, and safety while breastfeeding is not established.",
+      "This historical drink is not a treatment for croup or breathing difficulty; urgent breathing symptoms need prompt medical care."
+    ],
+    "primary_source": {
+      "title": "A Handbook of Invalid Cooking",
+      "author": "Mary A. Boland",
+      "publication_year": 1893,
+      "page": "105–106",
+      "url": "https://www.gutenberg.org/files/54568/54568-h/54568-h.htm#Page_105"
+    },
+    "safety_sources": [
+      {
+        "title": "Flaxseed and Flaxseed Oil: Usefulness and Safety",
+        "publisher": "National Center for Complementary and Integrative Health",
+        "url": "https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil"
+      }
+    ],
+    "reviewed_on": "2026-09-17"
   }
 ]

@@ -244,6 +244,7 @@ export const plantImages: Record<string, number> = {
   "downy-hawthorn.jpg": require("../../assets/plant-images/downy-hawthorn.jpg"),
   "dried-fruit-bread.jpg": require("../../assets/plant-images/dried-fruit-bread.jpg"),
   "dryads-saddle.jpg": require("../../assets/plant-images/dryads-saddle.jpg"),
+  "dulse-pacific.jpg": require("../../assets/plant-images/dulse-pacific.jpg"),
   "dutchmans-breeches.jpg": require("../../assets/plant-images/dutchmans-breeches.jpg"),
   "dwarf-ginseng.jpg": require("../../assets/plant-images/dwarf-ginseng.jpg"),
   "earthstar.jpg": require("../../assets/plant-images/earthstar.jpg"),
